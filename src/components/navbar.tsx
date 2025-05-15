@@ -4,29 +4,29 @@ const Header = () => {
 
     return (
 
-        <nav className=" bg-white h-25 flex gap-18 justify-items-stretch items-center items drop-shadow-xl" >
+        <nav className=" bg-white h-25 flex gap-12 justify-items-stretch items-center items drop-shadow-xl" >
             <img alt={"temp"} className="object-contain rounded-md h-32 w-32" src="/Logo_Trans.png">
 
             </img>
 
-            <Link href="/">
-                <h1 className="text-3xl font-bold text-center">
-                    <span className="text-[#000000]">Temp</span>
+            <Link href="/about">
+                <h1 className="text-2xl font-bold text-center text-[#000000]">
+                    About Us
                 </h1>
             </Link>
-            <Link href="/">
-                <h1 className="text-3xl font-bold text-center">
-                    <span className="text-[#000000]">Temp</span>
+            <Link href="/events">
+                <h1 className="text-2xl font-bold text-center text-[#000000]">
+                    Our Events
                 </h1>
             </Link>
-            <Link href="/">
-                <h1 className="text-3xl font-bold text-center">
-                    <span className="text-[#000000]">Temp</span>
+            <Link href="/teams">
+                <h1 className="text-2xl font-bold text-center text-[#000000]">
+                    Our Teams
                 </h1>
             </Link>
-            <Link href="/">
-                <h1 className="text-3xl font-bold text-center">
-                    <span className="text-[#000000]">Temp</span>
+            <Link href="/contact">
+                <h1 className="text-2xl font-bold text-center text-[#000000]">
+                    Contact Us
                 </h1>
             </Link>
         </nav>
