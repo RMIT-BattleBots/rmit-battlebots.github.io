@@ -4,7 +4,9 @@ const Header = () => {
 
     return (
 
-        <nav className=" bg-white h-25 flex gap-12 justify-items-stretch items-center items drop-shadow-xl" >
+        <nav className=" bg-red-700 h-25 sticky top-0" >
+            <div className="bg-white h-24 flex gap-18 justify-items-stretch items-center items drop-shadow-xl sticky top-0" >
+
             <img alt={"temp"} className="object-contain rounded-md h-32 w-32" src="/Logo_Trans.png">
 
             </img>
@@ -29,6 +31,7 @@ const Header = () => {
                     Contact Us
                 </h1>
             </Link>
+            </div>
         </nav>
 
     );
