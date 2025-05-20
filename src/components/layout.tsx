@@ -6,7 +6,7 @@ interface LayoutProps {
     centerMain: boolean;
 }
 
-export default function Layout({ children, centerMain = false }: LayoutProps) {
+export default function Layout({ children }: LayoutProps) {
     return (
         <div className="bg-[url('/background.png')] bg-fixed bg-center text-[#E7ECEF] min-h-screen flex flex-col">
             <Navbar />
