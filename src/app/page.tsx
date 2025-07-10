@@ -1,4 +1,4 @@
-import { BlogPosts } from 'app/components/posts'
+import { BlogPosts } from 'src/app/components/posts'
 
 export default function Page() {
   return (

@@ -1,4 +1,4 @@
-import { baseUrl } from 'app/sitemap'
+import { baseUrl } from 'src/app/lib/sitemap'
 
 export default function robots() {
   return {
