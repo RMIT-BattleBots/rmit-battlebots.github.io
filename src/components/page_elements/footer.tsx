@@ -23,33 +23,34 @@ export default function Footer() {
           <a
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
-            target="_blank"
-            href="/rss"
+            target="_self"
+            href="/#"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">rss</p>
+            <p className="ml-2 h-7">HOME</p>
           </a>
         </li>
         <li>
           <a
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/vercel/next.js"
+            target="_self" // https://www.w3schools.com/tags/att_a_target.asp
+            // href="https://github.com/vercel/next.js"
+            href="/#"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">github</p>
+            <p className="ml-2 h-7">HOME</p>
           </a>
         </li>
         <li>
           <a
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
-            target="_blank"
-            href="https://vercel.com/templates/next.js/portfolio-starter-kit"
+            target="_self"
+            href="/#"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">view source</p>
+            <p className="ml-2 h-7">HOME</p>
           </a>
         </li>
       </ul>
