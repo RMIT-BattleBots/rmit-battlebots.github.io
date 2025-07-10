@@ -9,31 +9,11 @@ import Footer from '../components/page_elements/footer'
 import RobotLogo from 'assets/robot_logo.svg';
 
 export const metadata: Metadata = {
-  // metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'RMIT Battlebots club',
+    template: 'Next.js Portfolio Starter',
   },
-  description: 'This is my portfolio.',
-  openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
-    // url: baseUrl,
-    siteName: 'My Portfolio',
-    locale: 'en_US',
-    type: 'website',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
+  description: 'This is the website for the RMIT Battlebots club',
 }
 
 const cx = (...classes) => classes.filter(Boolean).join(' ')
