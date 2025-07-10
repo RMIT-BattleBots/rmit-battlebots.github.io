@@ -1,42 +1,49 @@
-# Portfolio Blog Starter
+# 🤖 RMIT BattleBots Website
 
-This is a porfolio site template complete with a blog. Includes:
+Welcome to the official website for **RMIT BattleBots** - a student-run engineering club building combat robots and inspiring hands-on innovation through tech, teamwork, and friendly destruction.
 
-- MDX and Markdown support
-- Optimized for SEO (sitemap, robots, JSON-LD schema)
-- RSS Feed
-- Dynamic OG images
-- Syntax highlighting
-- Tailwind v4
-- Vercel Speed Insights / Web Analytics
-- Geist font
+This site is used to share our events, showcase our bots, and connect with the community.
 
-## Demo
+---
 
-https://portfolio-blog-starter.vercel.app
+## 🚀 Getting Started
 
-## How to Use
+### Prerequisites
 
-You can choose from one of the following two methods to use this repository:
+Make sure you have the following installed:
 
-### One-Click Deploy
+- [Node.js](https://nodejs.org/) (v18 or later recommended)
+- [npm](https://www.npmjs.com/)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+### Running the Website Locally
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
-
-### Clone and Deploy
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
+1. **Clone the repository**
 
 ```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog
+git clone https://github.com/your-username/battlebots-website.git
+cd battlebots-website
 ```
 
-Then, run Next.js in development mode:
+2. **Install Dependencies**
 
 ```bash
-pnpm dev
+npm install
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+3. **Run the development server**
+
+```bash
+npm run dev
+```
+
+Visit [http://localhost:3000](http://localhost:3000) to see the site.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the community and club members!
+
+Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to get started.
+
+---
