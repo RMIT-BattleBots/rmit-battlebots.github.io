@@ -1,3 +1,5 @@
+// taken from: https://flowbite.com/docs/components/timeline/
+
 export default function Page() {
     return (
         <ol className="relative border-s border-gray-200 dark:border-gray-700">                  
