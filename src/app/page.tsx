@@ -6,11 +6,11 @@ export default function Page() {
         My Portfolio
       </h1>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        <b>This is the homepage for the RMIT battlebots club!</b> The goal of 
+        this website will be to include information about the club, when it runs, 
+        and how to join. Potential pages include the homepage (you are here!), 
+        an about us page, a schedule containing upcoming events/workshops, and maybe
+        a gallery or something?
       </p>
     </section>
   )
