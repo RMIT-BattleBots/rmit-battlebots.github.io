@@ -7,33 +7,14 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "../components/page_elements/footer";
 import RobotLogo from "assets/robot_logo.svg";
+import TabIcon from "../components/utils/tab_icon"
 
 export const metadata: Metadata = {
-  // metadataBase: new URL(baseUrl),
   title: {
-    default: "Next.js Portfolio Starter",
-    template: "%s | Next.js Portfolio Starter",
+    default: "RMIT Battlebots Club",
+    template: "Next.js Portfolio Starter",
   },
-  description: "This is my portfolio.",
-  openGraph: {
-    title: "My Portfolio",
-    description: "This is my portfolio.",
-    // url: baseUrl,
-    siteName: "My Portfolio",
-    locale: "en_US",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
+  description: "This is the website for the RMIT Battlebots club.",
 };
 
 const cx = (...classes) => classes.filter(Boolean).join(" ");
@@ -52,8 +33,10 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
+      <TabIcon />
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+          
           <Navbar />
           <RobotLogo width="400" />
           {children}
