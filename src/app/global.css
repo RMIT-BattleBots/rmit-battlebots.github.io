@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 ::selection {
   background-color: #47a3f3;
@@ -31,6 +31,92 @@
 
 html {
   min-width: 360px;
+  scroll-behavior: smooth;
+  font-family: "Inter", "Geist", "Segoe UI", "Roboto", "Helvetica Neue", Arial,
+    sans-serif;
+  background: inherit;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #18181b;
+  min-height: 100vh;
+  font-family: inherit;
+  transition: background-color 0.3s, color 0.3s;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #18181b;
+    color: #f4f4f5;
+  }
+}
+
+.light-mode body {
+  background-color: #f8fafc;
+  color: #18181b;
+}
+
+.dark-mode body {
+  background-color: #18181b;
+  color: #f4f4f5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  color: inherit;
+}
+
+ul,
+ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+a {
+  color: #c40e0e;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #a30c0c;
 }
 
 .prose .anchor {
@@ -53,7 +139,7 @@ html {
 
 .prose .anchor:after {
   @apply text-neutral-300 dark:text-neutral-700;
-  content: '#';
+  content: "#";
 }
 
 .prose *:hover > .anchor {
@@ -131,8 +217,8 @@ pre {
 }
 
 /* Remove Safari input shadow on mobile */
-input[type='text'],
-input[type='email'] {
+input[type="text"],
+input[type="email"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -155,4 +241,25 @@ table {
 
 .dark-mode {
   background-color: rgb(0, 0, 0);
+}
+
+.card-shadow {
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.06),
+    0 1.5px 6px 0 rgba(0, 0, 0, 0.03);
+  border-radius: 1rem;
+  background: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 4px;
+}
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-thumb {
+    background: #27272a;
+  }
 }

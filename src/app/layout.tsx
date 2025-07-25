@@ -2,12 +2,12 @@ import "./global.css";
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
-import { Navbar } from "../components/page_elements/nav";
+import { Navbar } from "../components/shared/nav";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Footer from "../components/page_elements/footer";
+import Footer from "../components/shared/footer";
 import RobotLogo from "assets/robot_logo.svg";
-import TabIcon from "../components/utils/tab_icon"
+import TabIcon from "../utils/tab_icon";
 
 export const metadata: Metadata = {
   title: {
@@ -34,11 +34,9 @@ export default function RootLayout({
       )}
     >
       <TabIcon />
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          
+      <body className="antialiased min-h-screen w-full">
+        <main className="flex-auto min-w-0 mt-6 flex flex-col px-4 md:px-8 py-8 rounded-xl shadow-lg max-w-2xl mx-auto">
           <Navbar />
-          <RobotLogo width="400" />
           {children}
           <Footer />
           <Analytics />
