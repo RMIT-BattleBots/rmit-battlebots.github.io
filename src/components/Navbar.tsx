@@ -18,19 +18,22 @@ export default function Navbar() {
           <Link href="#">Blog</Link>
         </li>
         <li>
-          <Link href="#">Contact Us</Link>
+          <Link href="/contact">Contact Us</Link>
         </li>
         <li>
-          <Link href="#">About</Link>
-        </li>
-        <li>
-          <Link href="#">Our Committee</Link>
+          <Link href="/about">About</Link>
         </li>
         <li>
           <Link href="#">Our Bots</Link>
         </li>
         <li>
-          <Link href="#">Membership</Link>
+          <Link
+            href="https://store.rmit.edu.au/pages/club/battlebots"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Membership
+          </Link>
         </li>
       </ul>
     </nav>
