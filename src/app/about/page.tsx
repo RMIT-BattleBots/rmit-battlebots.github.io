@@ -39,10 +39,10 @@ export default function AboutPage() {
             />
           </div>
           <p className="text-gray-600 mb-6">
-            Whether you're a seasoned engineer or just curious about robotics,
-            we welcome anyone with a passion for building and competing. Our
-            club provides the perfect environment to learn, create, and unleash
-            your inner innovator!
+            Whether you&apos;re a seasoned engineer or just curious about
+            robotics, we welcome anyone with a passion for building and
+            competing. Our club provides the perfect environment to learn,
+            create, and unleash your inner innovator!
           </p>
         </div>
 
