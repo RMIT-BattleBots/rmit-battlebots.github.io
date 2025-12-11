@@ -21,7 +21,9 @@ You can use multiple levels of headings to create a clear hierarchy.
 ## Writing Tips
 
 - Use **bold text** to emphasize important points
-- Use *italic text* for subtle emphasis
+
+- Use _italic text_ for subtle emphasis
+
 - Break up long paragraphs for better readability
 - Use lists (like this one) to organize information
 
@@ -32,6 +34,7 @@ To include images in your blog post:
 ![Descriptive alt text for the image](/blog-images/your-image.jpg)
 
 **Remember:**
+
 - Place images in the `public/blog-images/` directory
 - Use descriptive filenames
 - Always include alt text for accessibility
@@ -65,4 +68,3 @@ Wrap up your blog post with a conclusion that summarizes key points and provides
 ---
 
 _Feel free to delete this template content and replace it with your own blog post!_
-
