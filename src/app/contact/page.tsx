@@ -16,9 +16,13 @@ export default function ContactPage() {
 
           <div className="space-y-8 mb-12">
             <div>
-              <h3 className="text-sm font-light tracking-wide text-gray-500 uppercase mb-2">Location</h3>
+              <h3 className="text-sm font-light tracking-wide text-gray-500 uppercase mb-2">
+                Location
+              </h3>
               <p className="text-gray-700 font-light">RMIT City Campus</p>
-              <p className="text-gray-700 font-light">Melbourne, Victoria, Australia</p>
+              <p className="text-gray-700 font-light">
+                Melbourne, Victoria, Australia
+              </p>
             </div>
 
             <div>
@@ -32,10 +36,12 @@ export default function ContactPage() {
           </div>
 
           <div>
-            <h3 className="text-sm font-light tracking-wide text-gray-500 uppercase mb-6">Follow Us</h3>
+            <h3 className="text-sm font-light tracking-wide text-gray-500 uppercase mb-6">
+              Follow Us
+            </h3>
             <div className="flex gap-6">
-              <a 
-                href="https://www.instagram.com/rmitbattlebots"
+              <a
+                href="https://www.instagram.com/rmitarc/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-60 transition-opacity"
@@ -48,8 +54,8 @@ export default function ContactPage() {
                   className="opacity-60"
                 />
               </a>
-              <a 
-                href="https://www.linkedin.com/company/rmit-battlebots"
+              <a
+                href="https://www.linkedin.com/company/advanced-rmit-combat-robotics"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-60 transition-opacity"
@@ -62,7 +68,7 @@ export default function ContactPage() {
                   className="opacity-60"
                 />
               </a>
-              <a 
+              <a
                 href="https://github.com/RMIT-BattleBots"
                 target="_blank"
                 rel="noopener noreferrer"

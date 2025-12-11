@@ -13,25 +13,37 @@ const Footer = () => (
             © {new Date().getFullYear()} ARC. All rights reserved.
           </p>
         </div>
-        
+
         <div className="flex gap-6">
           <a
-            href="https://www.linkedin.com/company/rmit-battlebots"
+            href="https://www.linkedin.com/company/advanced-rmit-combat-robotics"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
             className="hover:opacity-60 transition-opacity"
           >
-            <Image src="/linkedin.svg" alt="LinkedIn" width={20} height={20} className="opacity-60" />
+            <Image
+              src="/linkedin.svg"
+              alt="LinkedIn"
+              width={20}
+              height={20}
+              className="opacity-60"
+            />
           </a>
           <a
-            href="https://www.instagram.com/rmitbattlebots"
+            href="https://www.instagram.com/rmitarc/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
             className="hover:opacity-60 transition-opacity"
           >
-            <Image src="/instagram.svg" alt="Instagram" width={20} height={20} className="opacity-60" />
+            <Image
+              src="/instagram.svg"
+              alt="Instagram"
+              width={20}
+              height={20}
+              className="opacity-60"
+            />
           </a>
           <a
             href="https://github.com/RMIT-BattleBots"
@@ -40,7 +52,13 @@ const Footer = () => (
             aria-label="GitHub"
             className="hover:opacity-60 transition-opacity"
           >
-            <Image src="/github-mark.svg" alt="GitHub" width={20} height={20} className="opacity-60" />
+            <Image
+              src="/github-mark.svg"
+              alt="GitHub"
+              width={20}
+              height={20}
+              className="opacity-60"
+            />
           </a>
         </div>
       </div>
