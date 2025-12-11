@@ -21,7 +21,7 @@ export function getAllBlogPosts(): BlogPost[] {
 
   const fileNames = fs.readdirSync(blogDirectory);
   const allPostsData = fileNames
-    .filter((name) => name.endsWith('.md'))
+    .filter((name) => name.endsWith('.md') && name !== 'blog-template.md')
     .map((fileName) => {
       const slug = fileName.replace(/\.md$/, '');
       const fullPath = path.join(blogDirectory, fileName);
@@ -51,6 +51,10 @@ export function getAllBlogPosts(): BlogPost[] {
 
 export function getBlogPostBySlug(slug: string): BlogPost | null {
   try {
+    // Exclude template file
+    if (slug === 'blog-template') {
+      return null;
+    }
     const fullPath = path.join(blogDirectory, `${slug}.md`);
     if (!fs.existsSync(fullPath)) {
       return null;
