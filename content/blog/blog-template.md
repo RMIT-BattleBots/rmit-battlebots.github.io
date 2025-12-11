@@ -21,7 +21,9 @@ You can use multiple levels of headings to create a clear hierarchy.
 ## Writing Tips
 
 - Use **bold text** to emphasize important points
+
 - Use _italic text_ for subtle emphasis
+
 - Break up long paragraphs for better readability
 - Use lists (like this one) to organize information
 
