@@ -11,44 +11,44 @@ export default function ContactPage() {
         <div className="decorative-shape shape-triangle border-l-[40px] border-r-[40px] border-b-[70px] bottom-1/4 left-1/3 animate-pulse-slow delay-200"></div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 lg:px-8 py-20 md:py-32 relative z-10">
-        <h1 className="text-5xl md:text-6xl font-light tracking-tight text-stone-900 mb-12 animate-fade-in-up">
+      <div className="max-w-5xl mx-auto px-6 lg:px-8 py-24 md:py-32 relative z-10">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight text-stone-900 mb-16 leading-tight animate-fade-in-up">
           Contact
         </h1>
 
-        <div className="mb-16 border-b border-stone-400/30 pb-16 animate-fade-in-up delay-100">
-          <h2 className="text-sm font-light tracking-wider text-stone-700 uppercase mb-8">
+        <div className="mb-20 border-b border-stone-400/40 pb-20 animate-fade-in-up delay-100">
+          <h2 className="text-sm font-light tracking-wider text-stone-700 uppercase mb-10 text-stone-900">
             Get in Touch
           </h2>
 
-          <div className="space-y-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-12 mb-12">
             <div className="group">
-              <h3 className="text-sm font-light tracking-wide text-stone-700 uppercase mb-2">
+              <h3 className="text-sm font-light tracking-wide text-stone-700 uppercase mb-4 text-stone-900">
                 Location
               </h3>
-              <p className="text-stone-800 font-light group-hover:translate-x-2 transition-transform duration-300">
+              <p className="text-lg text-stone-800 font-light group-hover:translate-x-2 transition-transform duration-300 leading-relaxed">
                 RMIT City Campus
               </p>
-              <p className="text-stone-800 font-light group-hover:translate-x-2 transition-transform duration-300">
+              <p className="text-lg text-stone-800 font-light group-hover:translate-x-2 transition-transform duration-300 leading-relaxed">
                 Melbourne, Victoria, Australia
               </p>
             </div>
 
             <div className="group">
-              <h3 className="text-sm font-light tracking-wide text-stone-700 uppercase mb-2">
+              <h3 className="text-sm font-light tracking-wide text-stone-700 uppercase mb-4 text-stone-900">
                 Meeting Times
               </h3>
-              <p className="text-stone-800 font-light group-hover:translate-x-2 transition-transform duration-300">
+              <p className="text-lg text-stone-800 font-light group-hover:translate-x-2 transition-transform duration-300 leading-relaxed">
                 Weekly workshops and build sessions
               </p>
             </div>
           </div>
 
           <div className="animate-fade-in-up delay-200">
-            <h3 className="text-sm font-light tracking-wide text-stone-700 uppercase mb-6">
+            <h3 className="text-sm font-light tracking-wide text-stone-700 uppercase mb-8 text-stone-900">
               Follow Us
             </h3>
-            <div className="flex gap-6">
+            <div className="flex gap-8">
               <a
                 href="https://www.instagram.com/rmitarc/"
                 target="_blank"
@@ -58,8 +58,8 @@ export default function ContactPage() {
                 <Image
                   src="/instagram.svg"
                   alt="Instagram"
-                  width={20}
-                  height={20}
+                  width={24}
+                  height={24}
                   className="opacity-70"
                 />
               </a>
@@ -72,8 +72,8 @@ export default function ContactPage() {
                 <Image
                   src="/linkedin.svg"
                   alt="LinkedIn"
-                  width={20}
-                  height={20}
+                  width={24}
+                  height={24}
                   className="opacity-70"
                 />
               </a>
@@ -86,8 +86,8 @@ export default function ContactPage() {
                 <Image
                   src="/github-mark.svg"
                   alt="GitHub"
-                  width={20}
-                  height={20}
+                  width={24}
+                  height={24}
                   className="opacity-70"
                 />
               </a>
@@ -95,16 +95,16 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="border-b border-stone-400/30 pb-16 animate-fade-in-up delay-300">
-          <h2 className="text-sm font-light tracking-wider text-stone-700 uppercase mb-8">
+        <div className="border-b border-stone-400/40 pb-20 animate-fade-in-up delay-300">
+          <h2 className="text-sm font-light tracking-wider text-stone-700 uppercase mb-10 text-stone-900">
             Join Our Community
           </h2>
 
           <div>
-            <h3 className="text-lg font-light text-stone-900 mb-4">
+            <h3 className="text-2xl font-light text-stone-900 mb-6 leading-tight">
               Membership
             </h3>
-            <p className="text-stone-800 font-light mb-6 max-w-xl">
+            <p className="text-lg text-stone-800 font-light mb-8 max-w-2xl leading-relaxed">
               Ready to join? Become a member and get access to our workshops,
               competitions, and resources.
             </p>
@@ -112,7 +112,7 @@ export default function ContactPage() {
               href="https://store.rmit.edu.au/pages/club/battlebots"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block border border-stone-900 text-stone-900 px-6 py-3 text-sm font-light tracking-wide hover:bg-stone-900 hover:text-stone-50 transition-all duration-300 bg-stone-50/50 hover:scale-105"
+              className="inline-block border-2 border-stone-900 text-stone-900 px-8 py-4 text-base font-light tracking-wide hover:bg-stone-900 hover:text-stone-50 transition-all duration-300 bg-stone-50/60 hover:scale-105 shadow-sm"
             >
               Join Now
             </a>

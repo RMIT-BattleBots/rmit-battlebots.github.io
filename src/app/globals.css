@@ -22,6 +22,27 @@ body {
   background-image: 
     radial-gradient(circle at 1px 1px, rgba(0,0,0,0.03) 1px, transparent 0);
   background-size: 20px 20px;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Improved Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+p {
+  line-height: 1.75;
+  font-size: 1.0625rem;
+}
+
+/* Better readability for body text */
+.text-body {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: #292524;
 }
 
 /* Animations */
@@ -132,7 +153,7 @@ body {
 /* Decorative shapes */
 .decorative-shape {
   position: absolute;
-  opacity: 0.05;
+  opacity: 0.04;
   pointer-events: none;
 }
 
@@ -152,4 +173,9 @@ body {
   border-left: solid transparent;
   border-right: solid transparent;
   border-bottom: solid rgba(0, 0, 0, 0.1);
+}
+
+/* Better section spacing */
+section {
+  scroll-margin-top: 100px;
 }
