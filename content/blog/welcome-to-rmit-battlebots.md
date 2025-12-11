@@ -3,7 +3,7 @@ title: "Welcome to ARC!"
 date: "2024-01-15"
 author: "ARC Team"
 excerpt: "Join us as we kick off an exciting new season of robot combat, innovation, and engineering excellence."
-featuredImage: "/blog-images/battlebot-hero.jpg"
+featuredImage: "/blog-images/battlebot-action.jpg"
 ---
 
 # Welcome to ARC!
@@ -50,8 +50,8 @@ This season promises to be our most exciting yet! We have several competitions l
 
 Follow us on social media to stay updated with the latest news and events:
 
-- **Instagram**: [@rmitbattlebots](https://www.instagram.com/rmitarc/)
-- **LinkedIn**: [RMIT BattleBots](https://www.linkedin.com/company/advanced-rmit-combat-robotics)
+- **Instagram**: [@rmitarc](https://www.instagram.com/rmitarc/)
+- **LinkedIn**: [Advanced RMIT Combat-Robotics](https://www.linkedin.com/company/advanced-rmit-combat-robotics)
 - **GitHub**: [RMIT-BattleBots](https://github.com/RMIT-BattleBots)
 
 We're excited to have you join us on this journey. Let's build something amazing together!

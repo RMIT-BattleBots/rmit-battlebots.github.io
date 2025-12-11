@@ -20,8 +20,8 @@ Make sure you have the following installed:
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/battlebots-website.git
-cd battlebots-website
+git clone https://github.com/RMIT-BattleBots/rmit-battlebots.github.io.git
+cd rmit-battlebots.github.io
 ```
 
 2. **Install Dependencies**
@@ -37,6 +37,41 @@ npm run dev
 ```
 
 Visit [http://localhost:3000](http://localhost:3000) to see the site.
+
+---
+
+## 📦 Building for Production
+
+To build the site for production:
+
+```bash
+npm run build
+```
+
+The static site will be generated in the `out` directory.
+
+---
+
+## 🚀 GitHub Pages Deployment
+
+This site is configured to automatically deploy to GitHub Pages when changes are pushed to the `main` branch.
+
+### Automatic Deployment
+
+The GitHub Actions workflow (`.github/workflows/nextjs.yml`) will:
+
+1. Build the Next.js static site
+2. Deploy it to GitHub Pages automatically
+
+### Manual Deployment
+
+If you need to deploy manually:
+
+1. Ensure GitHub Pages is enabled in your repository settings
+2. Set the source to "GitHub Actions"
+3. Push changes to the `main` branch or trigger the workflow manually from the Actions tab
+
+The site will be available at: `https://rmit-battlebots.github.io`
 
 ---
 
