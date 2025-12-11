@@ -12,198 +12,325 @@ export default function Home() {
         <div className="decorative-shape shape-triangle border-l-[60px] border-r-[60px] border-b-[100px] top-1/3 right-1/3 animate-pulse-slow delay-200"></div>
         <div className="decorative-shape shape-square w-48 h-48 bottom-1/3 -left-24 animate-float delay-400"></div>
 
-        {/* Combat Robotics Elements */}
-        {/* Sawblades */}
+        {/* Rising Shapes - Slowly moving upward */}
+        <div className="decorative-shape shape-circle w-32 h-32 left-[10%] bottom-0 animate-rise delay-100"></div>
+        <div className="decorative-shape shape-square w-24 h-24 left-[20%] bottom-0 animate-rise-slow delay-500"></div>
+        <div className="decorative-shape shape-circle w-40 h-40 left-[30%] bottom-0 animate-rise delay-800"></div>
+        <div className="decorative-shape shape-triangle border-l-[30px] border-r-[30px] border-b-[50px] left-[40%] bottom-0 animate-rise-slow delay-1200"></div>
+        <div className="decorative-shape shape-circle w-28 h-28 left-[50%] bottom-0 animate-rise delay-300"></div>
+        <div className="decorative-shape shape-square w-36 h-36 left-[60%] bottom-0 animate-rise-slow delay-600"></div>
+        <div className="decorative-shape shape-circle w-32 h-32 left-[70%] bottom-0 animate-rise delay-1000"></div>
+        <div className="decorative-shape shape-triangle border-l-[25px] border-r-[25px] border-b-[40px] left-[80%] bottom-0 animate-rise-slow delay-400"></div>
+        <div className="decorative-shape shape-square w-28 h-28 left-[90%] bottom-0 animate-rise delay-700"></div>
+
+        {/* More rising shapes with different delays */}
+        <div className="decorative-shape shape-circle w-36 h-36 left-[15%] bottom-0 animate-rise-slow delay-1500"></div>
+        <div className="decorative-shape shape-square w-30 h-30 left-[25%] bottom-0 animate-rise delay-2000"></div>
+        <div className="decorative-shape shape-circle w-26 h-26 left-[35%] bottom-0 animate-rise-slow delay-2500"></div>
+        <div className="decorative-shape shape-triangle border-l-[20px] border-r-[20px] border-b-[35px] left-[45%] bottom-0 animate-rise delay-3000"></div>
+        <div className="decorative-shape shape-circle w-34 h-34 left-[55%] bottom-0 animate-rise-slow delay-500"></div>
+        <div className="decorative-shape shape-square w-32 h-32 left-[65%] bottom-0 animate-rise delay-1200"></div>
+        <div className="decorative-shape shape-circle w-28 h-28 left-[75%] bottom-0 animate-rise-slow delay-1800"></div>
+        <div className="decorative-shape shape-triangle border-l-[28px] border-r-[28px] border-b-[45px] left-[85%] bottom-0 animate-rise delay-2200"></div>
+        <div className="decorative-shape shape-square w-24 h-24 left-[95%] bottom-0 animate-rise-slow delay-800"></div>
+
+        {/* Additional rising shapes for more visual interest */}
+        <div className="decorative-shape shape-circle w-30 h-30 left-[5%] bottom-0 animate-rise delay-1400"></div>
+        <div className="decorative-shape shape-square w-22 h-22 left-[12%] bottom-0 animate-rise-slow delay-1900"></div>
+        <div className="decorative-shape shape-circle w-38 h-38 left-[18%] bottom-0 animate-rise delay-600"></div>
+        <div className="decorative-shape shape-triangle border-l-[22px] border-r-[22px] border-b-[38px] left-[22%] bottom-0 animate-rise-slow delay-1100"></div>
+        <div className="decorative-shape shape-circle w-26 h-26 left-[28%] bottom-0 animate-rise delay-1600"></div>
+        <div className="decorative-shape shape-square w-34 h-34 left-[38%] bottom-0 animate-rise-slow delay-900"></div>
+        <div className="decorative-shape shape-circle w-32 h-32 left-[42%] bottom-0 animate-rise delay-1300"></div>
+        <div className="decorative-shape shape-triangle border-l-[24px] border-r-[24px] border-b-[42px] left-[48%] bottom-0 animate-rise-slow delay-1700"></div>
+        <div className="decorative-shape shape-square w-28 h-28 left-[52%] bottom-0 animate-rise delay-400"></div>
+        <div className="decorative-shape shape-circle w-36 h-36 left-[58%] bottom-0 animate-rise-slow delay-1000"></div>
+        <div className="decorative-shape shape-square w-24 h-24 left-[62%] bottom-0 animate-rise delay-1500"></div>
+        <div className="decorative-shape shape-triangle border-l-[18px] border-r-[18px] border-b-[32px] left-[68%] bottom-0 animate-rise-slow delay-2000"></div>
+        <div className="decorative-shape shape-circle w-30 h-30 left-[72%] bottom-0 animate-rise delay-700"></div>
+        <div className="decorative-shape shape-square w-26 h-26 left-[78%] bottom-0 animate-rise-slow delay-1400"></div>
+        <div className="decorative-shape shape-circle w-34 h-34 left-[82%] bottom-0 animate-rise delay-1100"></div>
+        <div className="decorative-shape shape-triangle border-l-[26px] border-r-[26px] border-b-[44px] left-[88%] bottom-0 animate-rise-slow delay-600"></div>
+        <div className="decorative-shape shape-square w-32 h-32 left-[92%] bottom-0 animate-rise delay-1800"></div>
+        <div className="decorative-shape shape-circle w-28 h-28 left-[98%] bottom-0 animate-rise-slow delay-1200"></div>
+
+        {/* Combat Robotics Elements - Positioned in margins, not overlapping content */}
+        {/* Top corners and edges */}
         <div
-          className="combat-element top-20 right-20 animate-rotate-slow"
-          style={{ width: "120px", height: "120px" }}
+          className="combat-element -top-8 right-8 animate-rotate-slow"
+          style={{ width: "100px", height: "100px", opacity: 0.25 }}
         >
-          <svg viewBox="0 0 100 100" className="w-full h-full">
-            <circle
-              cx="50"
-              cy="50"
-              r="45"
-              fill="none"
-              stroke="rgba(196, 15, 15, 0.2)"
-              strokeWidth="1"
-            />
-            <path
-              d="M50,5 L52,45 L50,50 L48,45 Z M95,50 L55,52 L50,50 L55,48 Z M50,95 L48,55 L50,50 L52,55 Z M5,50 L45,48 L50,50 L45,52 Z"
-              fill="rgba(196, 15, 15, 0.15)"
-              stroke="rgba(196, 15, 15, 0.25)"
-              strokeWidth="1.5"
-            />
-            <circle cx="50" cy="50" r="8" fill="rgba(196, 15, 15, 0.3)" />
-          </svg>
+          <img
+            src="/circular-saw.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
         </div>
 
         <div
-          className="combat-element top-1/3 left-10 animate-rotate delay-300"
-          style={{ width: "80px", height: "80px" }}
+          className="combat-element top-8 -right-12 animate-rotate delay-100"
+          style={{ width: "80px", height: "80px", opacity: 0.2 }}
         >
-          <svg viewBox="0 0 100 100" className="w-full h-full">
-            <circle
-              cx="50"
-              cy="50"
-              r="40"
-              fill="none"
-              stroke="rgba(196, 15, 15, 0.2)"
-              strokeWidth="1"
-            />
-            <path
-              d="M50,10 L51,40 L50,50 L49,40 Z M90,50 L60,51 L50,50 L60,49 Z M50,90 L49,60 L50,50 L51,60 Z M10,50 L40,49 L50,50 L40,51 Z"
-              fill="rgba(196, 15, 15, 0.15)"
-              stroke="rgba(196, 15, 15, 0.25)"
-              strokeWidth="1.5"
-            />
-            <circle cx="50" cy="50" r="6" fill="rgba(196, 15, 15, 0.3)" />
-          </svg>
+          <img
+            src="/gear.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
         </div>
 
         <div
-          className="combat-element bottom-1/4 right-1/3 animate-rotate-slow delay-500"
-          style={{ width: "100px", height: "100px" }}
+          className="combat-element -top-6 left-8 animate-rotate-slow delay-200"
+          style={{ width: "90px", height: "90px", opacity: 0.22 }}
         >
-          <svg viewBox="0 0 100 100" className="w-full h-full">
-            <circle
-              cx="50"
-              cy="50"
-              r="42"
-              fill="none"
-              stroke="rgba(196, 15, 15, 0.2)"
-              strokeWidth="1"
-            />
-            <path
-              d="M50,8 L51.5,42 L50,50 L48.5,42 Z M92,50 L58,51.5 L50,50 L58,48.5 Z M50,92 L48.5,58 L50,50 L51.5,58 Z M8,50 L42,48.5 L50,50 L42,51.5 Z"
-              fill="rgba(196, 15, 15, 0.15)"
-              stroke="rgba(196, 15, 15, 0.25)"
-              strokeWidth="1.5"
-            />
-            <circle cx="50" cy="50" r="7" fill="rgba(196, 15, 15, 0.3)" />
-          </svg>
-        </div>
-
-        {/* Gears */}
-        <div
-          className="combat-element top-1/2 left-1/4 animate-rotate delay-200"
-          style={{ width: "90px", height: "90px" }}
-        >
-          <svg viewBox="0 0 100 100" className="w-full h-full">
-            <circle
-              cx="50"
-              cy="50"
-              r="35"
-              fill="rgba(196, 15, 15, 0.1)"
-              stroke="rgba(196, 15, 15, 0.2)"
-              strokeWidth="1.5"
-            />
-            <circle cx="50" cy="50" r="12" fill="rgba(196, 15, 15, 0.2)" />
-            <rect
-              x="48"
-              y="15"
-              width="4"
-              height="20"
-              fill="rgba(196, 15, 15, 0.2)"
-            />
-            <rect
-              x="48"
-              y="65"
-              width="4"
-              height="20"
-              fill="rgba(196, 15, 15, 0.2)"
-            />
-            <rect
-              x="15"
-              y="48"
-              width="20"
-              height="4"
-              fill="rgba(196, 15, 15, 0.2)"
-            />
-            <rect
-              x="65"
-              y="48"
-              width="20"
-              height="4"
-              fill="rgba(196, 15, 15, 0.2)"
-            />
-            <rect
-              x="30"
-              y="30"
-              width="4"
-              height="15"
-              fill="rgba(196, 15, 15, 0.2)"
-              transform="rotate(45 50 50)"
-            />
-            <rect
-              x="66"
-              y="30"
-              width="4"
-              height="15"
-              fill="rgba(196, 15, 15, 0.2)"
-              transform="rotate(45 50 50)"
-            />
-            <rect
-              x="30"
-              y="55"
-              width="4"
-              height="15"
-              fill="rgba(196, 15, 15, 0.2)"
-              transform="rotate(45 50 50)"
-            />
-            <rect
-              x="66"
-              y="55"
-              width="4"
-              height="15"
-              fill="rgba(196, 15, 15, 0.2)"
-              transform="rotate(45 50 50)"
-            />
-          </svg>
+          <img
+            src="/circular-saw.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
         </div>
 
         <div
-          className="combat-element bottom-20 left-20 animate-rotate-slow delay-400"
-          style={{ width: "70px", height: "70px" }}
+          className="combat-element top-12 -left-10 animate-rotate delay-300"
+          style={{ width: "70px", height: "70px", opacity: 0.18 }}
         >
-          <svg viewBox="0 0 100 100" className="w-full h-full">
-            <circle
-              cx="50"
-              cy="50"
-              r="30"
-              fill="rgba(196, 15, 15, 0.1)"
-              stroke="rgba(196, 15, 15, 0.2)"
-              strokeWidth="1.5"
-            />
-            <circle cx="50" cy="50" r="10" fill="rgba(196, 15, 15, 0.2)" />
-            <rect
-              x="48.5"
-              y="20"
-              width="3"
-              height="15"
-              fill="rgba(196, 15, 15, 0.2)"
-            />
-            <rect
-              x="48.5"
-              y="65"
-              width="3"
-              height="15"
-              fill="rgba(196, 15, 15, 0.2)"
-            />
-            <rect
-              x="20"
-              y="48.5"
-              width="15"
-              height="3"
-              fill="rgba(196, 15, 15, 0.2)"
-            />
-            <rect
-              x="65"
-              y="48.5"
-              width="15"
-              height="3"
-              fill="rgba(196, 15, 15, 0.2)"
-            />
-          </svg>
+          <img
+            src="/gear.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
+        </div>
+
+        {/* Left edge - between sections */}
+        <div
+          className="combat-element top-1/3 -left-16 animate-rotate-slow delay-400"
+          style={{ width: "85px", height: "85px", opacity: 0.2 }}
+        >
+          <img
+            src="/circular-saw.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
+        </div>
+
+        <div
+          className="combat-element top-1/2 -left-12 animate-rotate delay-500"
+          style={{ width: "75px", height: "75px", opacity: 0.18 }}
+        >
+          <img
+            src="/gear.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
+        </div>
+
+        <div
+          className="combat-element top-2/3 -left-14 animate-rotate-slow delay-100"
+          style={{ width: "65px", height: "65px", opacity: 0.2 }}
+        >
+          <img
+            src="/screw.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
+        </div>
+
+        {/* Right edge - between sections */}
+        <div
+          className="combat-element top-1/4 -right-14 animate-rotate delay-200"
+          style={{ width: "90px", height: "90px", opacity: 0.2 }}
+        >
+          <img
+            src="/gear.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
+        </div>
+
+        <div
+          className="combat-element top-1/2 -right-10 animate-rotate-slow delay-300"
+          style={{ width: "80px", height: "80px", opacity: 0.22 }}
+        >
+          <img
+            src="/circular-saw.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
+        </div>
+
+        <div
+          className="combat-element top-3/4 -right-12 animate-rotate delay-400"
+          style={{ width: "70px", height: "70px", opacity: 0.18 }}
+        >
+          <img
+            src="/gear.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
+        </div>
+
+        {/* Bottom corners and edges */}
+        <div
+          className="combat-element -bottom-8 right-12 animate-rotate-slow delay-500"
+          style={{ width: "95px", height: "95px", opacity: 0.2 }}
+        >
+          <img
+            src="/circular-saw.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
+        </div>
+
+        <div
+          className="combat-element bottom-8 -right-10 animate-rotate delay-100"
+          style={{ width: "75px", height: "75px", opacity: 0.18 }}
+        >
+          <img
+            src="/gear.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
+        </div>
+
+        <div
+          className="combat-element -bottom-6 left-10 animate-rotate-slow delay-200"
+          style={{ width: "85px", height: "85px", opacity: 0.22 }}
+        >
+          <img
+            src="/circular-saw.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
+        </div>
+
+        <div
+          className="combat-element bottom-12 -left-8 animate-rotate delay-300"
+          style={{ width: "70px", height: "70px", opacity: 0.18 }}
+        >
+          <img
+            src="/gear.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
+        </div>
+
+        {/* Hammer - floating in empty space */}
+        <div
+          className="combat-element top-1/4 left-1/6 animate-float delay-400"
+          style={{ width: "55px", height: "55px", opacity: 0.15 }}
+        >
+          <img
+            src="/hammer.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+              transform: "rotate(-15deg)",
+            }}
+          />
+        </div>
+
+        <div
+          className="combat-element bottom-1/4 right-1/5 animate-float-slow delay-500"
+          style={{ width: "60px", height: "60px", opacity: 0.15 }}
+        >
+          <img
+            src="/hammer.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+              transform: "rotate(20deg)",
+            }}
+          />
+        </div>
+
+        {/* More screws scattered */}
+        <div
+          className="combat-element top-2/5 left-1/8 animate-rotate-slow delay-100"
+          style={{ width: "45px", height: "45px", opacity: 0.16 }}
+        >
+          <img
+            src="/screw.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
+        </div>
+
+        <div
+          className="combat-element bottom-2/5 right-1/6 animate-rotate delay-200"
+          style={{ width: "50px", height: "50px", opacity: 0.17 }}
+        >
+          <img
+            src="/screw.svg"
+            alt=""
+            className="w-full h-full"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+            }}
+          />
         </div>
       </div>
 
@@ -382,25 +509,17 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              {/* Decorative sawblade overlay */}
+              {/* Decorative circular saw overlay - positioned outside image */}
               <div className="absolute -top-8 -right-8 w-24 h-24 opacity-20 animate-rotate-slow">
-                <svg viewBox="0 0 100 100" className="w-full h-full">
-                  <circle
-                    cx="50"
-                    cy="50"
-                    r="45"
-                    fill="none"
-                    stroke="rgba(196, 15, 15, 0.3)"
-                    strokeWidth="1"
-                  />
-                  <path
-                    d="M50,5 L52,45 L50,50 L48,45 Z M95,50 L55,52 L50,50 L55,48 Z M50,95 L48,55 L50,50 L52,55 Z M5,50 L45,48 L50,50 L45,52 Z"
-                    fill="rgba(196, 15, 15, 0.2)"
-                    stroke="rgba(196, 15, 15, 0.3)"
-                    strokeWidth="1.5"
-                  />
-                  <circle cx="50" cy="50" r="8" fill="rgba(196, 15, 15, 0.3)" />
-                </svg>
+                <img
+                  src="/circular-saw.svg"
+                  alt=""
+                  className="w-full h-full"
+                  style={{
+                    filter:
+                      "brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(7158%) hue-rotate(352deg) brightness(95%) contrast(88%)",
+                  }}
+                />
               </div>
             </div>
           </div>

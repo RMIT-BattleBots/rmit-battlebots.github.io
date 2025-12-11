@@ -123,13 +123,49 @@ p {
   }
 }
 
+@keyframes rise {
+  from {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  to {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes riseSlow {
+  from {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.08;
+  }
+  90% {
+    opacity: 0.08;
+  }
+  to {
+    transform: translateY(-200px) rotate(-360deg);
+    opacity: 0;
+  }
+}
+
 @layer utilities {
   .animate-fade-in-up {
     animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
   }
   
   .animate-fade-in {
     animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
   }
   
   .animate-float {
@@ -156,6 +192,14 @@ p {
     animation: rotateSlow 30s linear infinite;
   }
   
+  .animate-rise {
+    animation: rise 20s linear infinite;
+  }
+  
+  .animate-rise-slow {
+    animation: riseSlow 30s linear infinite;
+  }
+  
   .delay-100 {
     animation-delay: 0.1s;
   }
@@ -174,6 +218,46 @@ p {
   
   .delay-500 {
     animation-delay: 0.5s;
+  }
+  
+  .delay-600 {
+    animation-delay: 0.6s;
+  }
+  
+  .delay-700 {
+    animation-delay: 0.7s;
+  }
+  
+  .delay-800 {
+    animation-delay: 0.8s;
+  }
+  
+  .delay-900 {
+    animation-delay: 0.9s;
+  }
+  
+  .delay-1000 {
+    animation-delay: 1s;
+  }
+  
+  .delay-1200 {
+    animation-delay: 1.2s;
+  }
+  
+  .delay-1500 {
+    animation-delay: 1.5s;
+  }
+  
+  .delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .delay-2500 {
+    animation-delay: 2.5s;
+  }
+  
+  .delay-3000 {
+    animation-delay: 3s;
   }
 }
 
@@ -205,20 +289,18 @@ p {
 /* Combat robotics decorative elements */
 .combat-element {
   position: absolute;
-  opacity: 0.08;
   pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
 }
 
-.sawblade {
-  fill: rgba(196, 15, 15, 0.2);
-  stroke: rgba(196, 15, 15, 0.3);
-  stroke-width: 2;
-}
-
-.gear {
-  fill: rgba(196, 15, 15, 0.15);
-  stroke: rgba(196, 15, 15, 0.25);
-  stroke-width: 1.5;
+.combat-element img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 /* Better section spacing */
