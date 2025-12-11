@@ -36,12 +36,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const htmlContent = await markdownToHtml(post.content);
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-black">
       {/* Back Button */}
       <div className="max-w-4xl mx-auto px-6 lg:px-8 pt-12">
         <Link
           href="/blog"
-          className="inline-flex items-center text-gray-600 hover:text-indigo-600 text-sm font-light tracking-wide mb-12 transition-colors"
+          className="inline-flex items-center text-gray-400 hover:text-cyan-400 text-sm font-light tracking-wide mb-12 transition-colors"
         >
           ← Back to Blog
         </Link>
@@ -49,8 +49,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
       <article className="max-w-4xl mx-auto px-6 lg:px-8 pb-24">
         {/* Header */}
-        <header className="mb-12 border-b border-gray-100 pb-12">
-          <h1 className="text-4xl md:text-5xl font-light tracking-tight text-gray-900 mb-6 leading-tight">
+        <header className="mb-12 border-b border-cyan-500/20 pb-12">
+          <h1 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-6 leading-tight">
             {post.title}
           </h1>
           
@@ -65,7 +65,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
 
           {post.featuredImage && (
-            <div className="relative w-full h-64 md:h-96 mt-12 overflow-hidden bg-gray-50">
+            <div className="relative w-full h-64 md:h-96 mt-12 overflow-hidden bg-gray-900">
               <Image
                 src={post.featuredImage}
                 alt={post.title}
@@ -80,19 +80,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         {/* Content */}
         <div 
-          className="prose prose-lg max-w-none
-            prose-headings:text-gray-900 prose-headings:font-light prose-headings:tracking-tight
+          className="prose prose-lg max-w-none prose-invert
+            prose-headings:text-white prose-headings:font-light prose-headings:tracking-tight
             prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl
-            prose-p:text-gray-700 prose-p:leading-relaxed prose-p:font-light
-            prose-a:text-indigo-600 prose-a:no-underline hover:prose-a:underline prose-a:border-b prose-a:border-indigo-200 hover:prose-a:border-indigo-600
-            prose-strong:text-gray-900 prose-strong:font-normal
-            prose-code:text-indigo-600 prose-code:bg-indigo-50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-light
-            prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-none prose-pre:border prose-pre:border-gray-200
+            prose-p:text-gray-400 prose-p:leading-relaxed prose-p:font-light
+            prose-a:text-cyan-400 prose-a:no-underline hover:prose-a:underline prose-a:border-b prose-a:border-cyan-500/30 hover:prose-a:border-cyan-400
+            prose-strong:text-white prose-strong:font-normal
+            prose-code:text-cyan-400 prose-code:bg-cyan-950/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-light prose-code:border prose-code:border-cyan-500/20
+            prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-none prose-pre:border prose-pre:border-cyan-500/20
             prose-img:my-12 prose-img:w-full prose-img:h-auto
-            prose-blockquote:border-l prose-blockquote:border-indigo-300 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-gray-600 prose-blockquote:font-light prose-blockquote:my-8
-            prose-ul:list-none prose-ol:list-none prose-li:text-gray-700 prose-li:font-light prose-li:mb-2
+            prose-blockquote:border-l prose-blockquote:border-cyan-500/50 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-gray-400 prose-blockquote:font-light prose-blockquote:my-8
+            prose-ul:list-none prose-ol:list-none prose-li:text-gray-400 prose-li:font-light prose-li:mb-2
             prose-ul:space-y-2 prose-ol:space-y-2
-            prose-hr:border-gray-200 prose-hr:my-12"
+            prose-hr:border-cyan-500/20 prose-hr:my-12"
           dangerouslySetInnerHTML={{ __html: htmlContent }}
         />
       </article>

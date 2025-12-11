@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="w-full bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-100">
+    <nav className="w-full bg-black/80 backdrop-blur-sm sticky top-0 z-50 border-b border-cyan-500/20">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link
@@ -17,9 +17,9 @@ export default function Navbar() {
               alt="ARC Logo"
               width={32}
               height={32}
-              className="group-hover:opacity-80 transition-opacity"
+              className="group-hover:opacity-80 transition-opacity brightness-0 invert"
             />
-            <span className="text-lg font-light tracking-wide text-gray-900 group-hover:text-indigo-600 transition-colors">
+            <span className="text-lg font-light tracking-wide text-white group-hover:text-cyan-400 transition-colors">
               ARC
             </span>
           </Link>
@@ -28,7 +28,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/blog"
-                className="text-gray-600 hover:text-indigo-600 transition-colors"
+                className="text-gray-400 hover:text-cyan-400 transition-colors"
               >
                 Blog
               </Link>
@@ -36,7 +36,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/about"
-                className="text-gray-600 hover:text-indigo-600 transition-colors"
+                className="text-gray-400 hover:text-cyan-400 transition-colors"
               >
                 About
               </Link>
@@ -44,7 +44,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/contact"
-                className="text-gray-600 hover:text-indigo-600 transition-colors"
+                className="text-gray-400 hover:text-cyan-400 transition-colors"
               >
                 Contact
               </Link>
@@ -54,7 +54,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
-              className="text-gray-600 hover:text-indigo-600 transition-colors"
+              className="text-gray-400 hover:text-cyan-400 transition-colors"
               aria-label="Menu"
             >
               <svg

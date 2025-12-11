@@ -2,8 +2,8 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #e5e5e5;
 }
 
 @theme {
@@ -21,4 +21,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "kern" 1;
   text-rendering: optimizeLegibility;
+}
+
+/* Futuristic glow effects */
+@layer utilities {
+  .glow-cyan {
+    text-shadow: 0 0 10px rgba(34, 211, 238, 0.5), 0 0 20px rgba(34, 211, 238, 0.3);
+  }
+  
+  .glow-cyan-sm {
+    text-shadow: 0 0 5px rgba(34, 211, 238, 0.4);
+  }
+  
+  .border-glow {
+    box-shadow: 0 0 10px rgba(34, 211, 238, 0.3), inset 0 0 10px rgba(34, 211, 238, 0.1);
+  }
 }
