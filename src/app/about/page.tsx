@@ -23,9 +23,10 @@ export default function AboutPage() {
             />
           </div>
           <p className="text-gray-700 leading-relaxed font-light mb-8 max-w-2xl">
-            Advanced RMIT Combat-Robotics (ARC) brings together students from all
-            disciplines to design, build, and compete with combat robots. Our mission is to ignite the passion for combat robotics and
-            provide hands-on experience in engineering, design, and innovation.
+            Advanced RMIT Combat-Robotics (ARC) brings together students from
+            all disciplines to design, build, and compete with combat robots.
+            Our mission is to ignite the passion for combat robotics and provide
+            hands-on experience in engineering, design, and innovation.
           </p>
 
           <div className="mb-8">
@@ -65,13 +66,15 @@ export default function AboutPage() {
                   className="text-gray-900 border-b border-gray-300 hover:border-gray-900 transition-colors"
                 >
                   IBelong
-                </a>
-                {" "}to deliver engineering workshops to highschools
+                </a>{" "}
+                to deliver engineering workshops to highschools
               </span>
             </li>
             <li className="flex items-start">
               <span className="mr-4 text-gray-400">—</span>
-              <span>Run workshops on robotics, electronics, and mechanical design</span>
+              <span>
+                Run workshops on robotics, electronics, and mechanical design
+              </span>
             </li>
             <li className="flex items-start">
               <span className="mr-4 text-gray-400">—</span>
