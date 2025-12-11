@@ -9,17 +9,19 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <Link
             href="/"
-            className="flex items-center gap-3 hover:opacity-70 transition-opacity"
+            className="flex items-center gap-3 hover:opacity-70 transition-all duration-300 group"
             aria-label="Go to home page"
           >
-            <Image
-              src="/robot_logo.svg"
-              alt="ARC Logo"
-              width={32}
-              height={32}
-              className="opacity-70"
-            />
-            <span className="text-lg font-light tracking-wide text-stone-900">
+            <div className="group-hover:rotate-12 transition-transform duration-300">
+              <Image
+                src="/robot_logo.svg"
+                alt="ARC Logo"
+                width={32}
+                height={32}
+                className="opacity-70"
+              />
+            </div>
+            <span className="text-lg font-light tracking-wide text-stone-900 group-hover:translate-x-1 transition-transform duration-300">
               ARC
             </span>
           </Link>
@@ -28,25 +30,28 @@ export default function Navbar() {
             <li>
               <Link
                 href="/blog"
-                className="text-stone-800 hover:text-stone-900 transition-colors"
+                className="text-stone-800 hover:text-stone-900 transition-all duration-300 relative group"
               >
                 Blog
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-stone-900 group-hover:w-full transition-all duration-300"></span>
               </Link>
             </li>
             <li>
               <Link
                 href="/about"
-                className="text-stone-800 hover:text-stone-900 transition-colors"
+                className="text-stone-800 hover:text-stone-900 transition-all duration-300 relative group"
               >
                 About
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-stone-900 group-hover:w-full transition-all duration-300"></span>
               </Link>
             </li>
             <li>
               <Link
                 href="/contact"
-                className="text-stone-800 hover:text-stone-900 transition-colors"
+                className="text-stone-800 hover:text-stone-900 transition-all duration-300 relative group"
               >
                 Contact
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-stone-900 group-hover:w-full transition-all duration-300"></span>
               </Link>
             </li>
           </ul>
@@ -54,7 +59,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
-              className="text-stone-800 hover:text-stone-900 transition-colors"
+              className="text-stone-800 hover:text-stone-900 transition-all duration-300 hover:scale-110"
               aria-label="Menu"
             >
               <svg
