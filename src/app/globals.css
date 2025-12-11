@@ -4,6 +4,12 @@
 :root {
   --background: #ffffff;
   --foreground: #000000;
+  --accent-purple: #a78bfa;
+  --accent-teal: #2dd4bf;
+  --accent-coral: #fb7185;
+  --accent-mint: #6ee7b7;
+  --accent-lavender: #c4b5fd;
+  --accent-rose: #fda4af;
 }
 
 @theme {
@@ -37,5 +43,33 @@ body {
   
   .brutal-border-thick {
     border: 6px solid #000000;
+  }
+  
+  .bg-purple-aesthetic {
+    background-color: #a78bfa;
+  }
+  
+  .bg-teal-aesthetic {
+    background-color: #2dd4bf;
+  }
+  
+  .bg-coral-aesthetic {
+    background-color: #fb7185;
+  }
+  
+  .bg-mint-aesthetic {
+    background-color: #6ee7b7;
+  }
+  
+  .bg-lavender-aesthetic {
+    background-color: #c4b5fd;
+  }
+  
+  .bg-rose-aesthetic {
+    background-color: #fda4af;
+  }
+  
+  .bg-cream-aesthetic {
+    background-color: #fef3c7;
   }
 }

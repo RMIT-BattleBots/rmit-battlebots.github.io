@@ -13,16 +13,16 @@ export default function BlogPage() {
           <h1 className="text-6xl md:text-8xl font-black tracking-tight text-black mb-6 uppercase">
             Blog
           </h1>
-          <div className="brutal-border bg-cyan-400 p-6 brutal-shadow-sm max-w-2xl">
+          <div className="brutal-border bg-lavender-aesthetic p-6 brutal-shadow-sm max-w-2xl">
             <p className="text-lg text-black font-bold leading-tight">
-              Build logs, competition highlights, and engineering insights from <span className="bg-yellow-300 px-2 py-1">ARC</span>.
+              Build logs, competition highlights, and engineering insights from <span className="bg-purple-aesthetic px-2 py-1">ARC</span>.
             </p>
           </div>
         </div>
 
         {/* Blog Posts */}
         {posts.length === 0 ? (
-          <div className="py-20 brutal-border bg-yellow-300 p-8 brutal-shadow-sm">
+          <div className="py-20 brutal-border bg-mint-aesthetic p-8 brutal-shadow-sm">
             <p className="text-black font-black text-lg">No posts yet. Check back soon.</p>
           </div>
         ) : (
@@ -42,7 +42,7 @@ export default function BlogPage() {
                       />
                     </div>
                   ) : (
-                    <div className="w-full h-64 md:h-96 mb-8 bg-cyan-400 brutal-border flex items-center justify-center">
+                    <div className="w-full h-64 md:h-96 mb-8 bg-teal-aesthetic brutal-border flex items-center justify-center">
                       <span className="text-8xl">🤖</span>
                     </div>
                   )}
@@ -67,7 +67,7 @@ export default function BlogPage() {
                       {post.excerpt}
                     </p>
                     
-                    <span className="brutal-border bg-black text-white px-4 py-2 text-sm font-black tracking-wide uppercase brutal-shadow-sm inline-block group-hover:translate-x-1 group-hover:translate-y-1 group-hover:shadow-none transition-all">
+                    <span className="brutal-border bg-purple-aesthetic text-black px-4 py-2 text-sm font-black tracking-wide uppercase brutal-shadow-sm inline-block group-hover:translate-x-1 group-hover:translate-y-1 group-hover:shadow-none transition-all">
                       Read more →
                     </span>
                   </div>

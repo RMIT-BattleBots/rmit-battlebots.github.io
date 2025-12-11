@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-yellow-300">
+    <main className="min-h-screen bg-cream-aesthetic">
       {/* Hero Section */}
-      <section className="brutal-border-b bg-yellow-300">
+      <section className="brutal-border-b bg-cream-aesthetic">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 py-20 md:py-32">
           <div className="mb-12">
             <div className="brutal-border bg-white p-4 inline-block brutal-shadow-sm">
@@ -21,7 +21,7 @@ export default function Home() {
           <h1 className="text-6xl md:text-8xl font-black tracking-tight text-black mb-6 leading-tight uppercase">
             Advanced RMIT
             <br />
-            <span className="bg-cyan-400 text-black px-4 py-2 inline-block brutal-shadow-sm">
+            <span className="bg-purple-aesthetic text-black px-4 py-2 inline-block brutal-shadow-sm">
               Combat-Robotics
             </span>
           </h1>
@@ -50,7 +50,7 @@ export default function Home() {
       <section id="about" className="brutal-border-b bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 py-24 md:py-32">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-            <div className="brutal-border bg-cyan-400 p-6 brutal-shadow-sm">
+            <div className="brutal-border bg-teal-aesthetic p-6 brutal-shadow-sm">
               <h2 className="text-lg font-black tracking-wide text-black uppercase mb-4">
                 What We Do
               </h2>
@@ -59,7 +59,7 @@ export default function Home() {
                 students from various engineering disciplines.
               </p>
             </div>
-            <div className="brutal-border bg-yellow-300 p-6 brutal-shadow-sm">
+            <div className="brutal-border bg-mint-aesthetic p-6 brutal-shadow-sm">
               <h2 className="text-lg font-black tracking-wide text-black uppercase mb-4">
                 Our Approach
               </h2>
@@ -68,7 +68,7 @@ export default function Home() {
                 to learn engineering is by building machines.
               </p>
             </div>
-            <div className="brutal-border bg-red-400 p-6 brutal-shadow-sm">
+            <div className="brutal-border bg-lavender-aesthetic p-6 brutal-shadow-sm">
               <h2 className="text-lg font-black tracking-wide text-black uppercase mb-4">
                 Community
               </h2>
@@ -101,7 +101,7 @@ export default function Home() {
             <div className="mt-12">
               <Link
                 href="/blog"
-                className="brutal-border bg-black text-white px-6 py-3 text-sm font-black tracking-wide uppercase brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all inline-block"
+                className="brutal-border bg-purple-aesthetic text-black px-6 py-3 text-sm font-black tracking-wide uppercase brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all inline-block"
               >
                 Explore our work →
               </Link>
@@ -111,7 +111,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="brutal-border-b bg-cyan-400">
+      <section className="brutal-border-b bg-teal-aesthetic">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 py-24 md:py-32">
           <h2 className="text-5xl font-black text-black mb-8 uppercase">
             Connect

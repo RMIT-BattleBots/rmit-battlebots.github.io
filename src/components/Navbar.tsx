@@ -12,7 +12,7 @@ export default function Navbar() {
             className="flex items-center gap-3 group"
             aria-label="Go to home page"
           >
-            <div className="brutal-border bg-yellow-300 p-2 brutal-shadow-sm group-hover:translate-x-1 group-hover:translate-y-1 group-hover:shadow-none transition-all">
+            <div className="brutal-border bg-purple-aesthetic p-2 brutal-shadow-sm group-hover:translate-x-1 group-hover:translate-y-1 group-hover:shadow-none transition-all">
               <Image
                 src="/robot_logo.svg"
                 alt="ARC Logo"
@@ -37,7 +37,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/about"
-                className="brutal-border bg-cyan-400 text-black px-4 py-2 brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
+                className="brutal-border bg-teal-aesthetic text-black px-4 py-2 brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
               >
                 About
               </Link>
@@ -45,7 +45,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/contact"
-                className="brutal-border bg-yellow-300 text-black px-4 py-2 brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
+                className="brutal-border bg-coral-aesthetic text-black px-4 py-2 brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
               >
                 Contact
               </Link>

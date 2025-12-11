@@ -10,14 +10,14 @@ export default function ContactPage() {
         </h1>
 
         <div className="mb-16 brutal-border-b pb-16">
-          <div className="brutal-border bg-yellow-300 p-6 mb-8 brutal-shadow-sm">
+          <div className="brutal-border bg-coral-aesthetic p-6 mb-8 brutal-shadow-sm">
             <h2 className="text-2xl font-black tracking-wide text-black uppercase mb-8">
               Get in Touch
             </h2>
           </div>
 
           <div className="space-y-8 mb-12">
-            <div className="brutal-border bg-cyan-400 p-6 brutal-shadow-sm">
+            <div className="brutal-border bg-mint-aesthetic p-6 brutal-shadow-sm">
               <h3 className="text-lg font-black tracking-wide text-black uppercase mb-2">
                 Location
               </h3>
@@ -27,7 +27,7 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="brutal-border bg-red-400 p-6 brutal-shadow-sm">
+            <div className="brutal-border bg-lavender-aesthetic p-6 brutal-shadow-sm">
               <h3 className="text-lg font-black tracking-wide text-black uppercase mb-2">
                 Meeting Times
               </h3>
@@ -89,7 +89,7 @@ export default function ContactPage() {
         </div>
 
         <div className="brutal-border-b pb-16">
-          <div className="brutal-border bg-cyan-400 p-6 mb-8 brutal-shadow-sm">
+          <div className="brutal-border bg-teal-aesthetic p-6 mb-8 brutal-shadow-sm">
             <h2 className="text-2xl font-black tracking-wide text-black uppercase mb-8">
               Join Our Community
             </h2>
@@ -107,7 +107,7 @@ export default function ContactPage() {
               href="https://store.rmit.edu.au/pages/club/battlebots"
               target="_blank"
               rel="noopener noreferrer"
-              className="brutal-border bg-black text-white px-8 py-4 text-base font-black tracking-wide uppercase brutal-shadow hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all inline-block"
+              className="brutal-border bg-purple-aesthetic text-black px-8 py-4 text-base font-black tracking-wide uppercase brutal-shadow hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all inline-block"
             >
               Join Now
             </a>

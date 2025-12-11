@@ -41,7 +41,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <div className="max-w-4xl mx-auto px-6 lg:px-8 pt-12">
         <Link
           href="/blog"
-          className="brutal-border bg-black text-white px-4 py-2 text-sm font-black tracking-wide uppercase brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all inline-block mb-12"
+          className="brutal-border bg-teal-aesthetic text-black px-4 py-2 text-sm font-black tracking-wide uppercase brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all inline-block mb-12"
         >
           ← Back to Blog
         </Link>
@@ -84,12 +84,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             prose-headings:text-black prose-headings:font-black prose-headings:tracking-tight prose-headings:uppercase
             prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl
             prose-p:text-black prose-p:leading-relaxed prose-p:font-bold prose-p:text-lg
-            prose-a:text-black prose-a:no-underline prose-a:bg-yellow-300 prose-a:px-1 prose-a:font-black
+            prose-a:text-black prose-a:no-underline prose-a:bg-purple-aesthetic prose-a:px-1 prose-a:font-black
             prose-strong:text-black prose-strong:font-black
-            prose-code:text-black prose-code:bg-cyan-400 prose-code:px-2 prose-code:py-1 prose-code:font-black prose-code:brutal-border prose-code:border-2
+            prose-code:text-black prose-code:bg-teal-aesthetic prose-code:px-2 prose-code:py-1 prose-code:font-black prose-code:brutal-border prose-code:border-2
             prose-pre:bg-black prose-pre:text-white prose-pre:brutal-border prose-pre:border-4 prose-pre:p-4
             prose-img:my-12 prose-img:w-full prose-img:h-auto prose-img:brutal-border prose-img:border-4
-            prose-blockquote:border-l-4 prose-blockquote:border-black prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-black prose-blockquote:font-bold prose-blockquote:my-8 prose-blockquote:bg-yellow-300 prose-blockquote:py-2
+            prose-blockquote:border-l-4 prose-blockquote:border-black prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-black prose-blockquote:font-bold prose-blockquote:my-8 prose-blockquote:bg-mint-aesthetic prose-blockquote:py-2
             prose-ul:list-none prose-ol:list-none prose-li:text-black prose-li:font-bold prose-li:mb-2
             prose-ul:space-y-2 prose-ol:space-y-2
             prose-hr:border-black prose-hr:border-4 prose-hr:my-12"

@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const Footer = () => (
-  <footer className="w-full bg-yellow-300 brutal-border-t mt-auto">
+  <footer className="w-full bg-lavender-aesthetic brutal-border-t mt-auto">
     <div className="max-w-6xl mx-auto px-6 lg:px-8 py-12">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         <div className="brutal-border bg-white p-4 brutal-shadow-sm">
@@ -11,8 +11,10 @@ const Footer = () => (
           </p>
           <p className="text-xs font-black text-black">
             © {new Date().getFullYear()}{" "}
-            <span className="bg-black text-white px-2 py-1">ARC</span>. All
-            rights reserved.
+            <span className="bg-purple-aesthetic text-black px-2 py-1">
+              ARC
+            </span>
+            . All rights reserved.
           </p>
         </div>
 

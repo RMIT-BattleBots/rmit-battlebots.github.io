@@ -10,7 +10,7 @@ export default function AboutPage() {
         </h1>
 
         <div className="mb-16 brutal-border-b pb-16">
-          <div className="brutal-border bg-cyan-400 p-6 mb-8 brutal-shadow-sm">
+          <div className="brutal-border bg-teal-aesthetic p-6 mb-8 brutal-shadow-sm">
             <h2 className="text-2xl font-black tracking-wide text-black uppercase mb-6">
               Our Mission
             </h2>
@@ -49,20 +49,20 @@ export default function AboutPage() {
         </div>
 
         <div className="brutal-border-b pb-16">
-          <div className="brutal-border bg-yellow-300 p-6 mb-8 brutal-shadow-sm">
+          <div className="brutal-border bg-purple-aesthetic p-6 mb-8 brutal-shadow-sm">
             <h2 className="text-2xl font-black tracking-wide text-black uppercase mb-6">
               What We Do
             </h2>
           </div>
           <ul className="text-black space-y-4 font-bold text-lg">
             <li className="flex items-start">
-              <span className="mr-4 bg-red-400 px-2 py-1 brutal-border brutal-shadow-sm">
+              <span className="mr-4 bg-coral-aesthetic px-2 py-1 brutal-border brutal-shadow-sm">
                 —
               </span>
               <span>Design and build combat robots for competitions</span>
             </li>
             <li className="flex items-start">
-              <span className="mr-4 bg-red-400 px-2 py-1 brutal-border brutal-shadow-sm">
+              <span className="mr-4 bg-coral-aesthetic px-2 py-1 brutal-border brutal-shadow-sm">
                 —
               </span>
               <span>
@@ -71,7 +71,7 @@ export default function AboutPage() {
                   href="https://www.rmit.edu.au/about/our-values/diversity-and-inclusion/programs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-cyan-400 px-2 py-1 brutal-border text-black font-black"
+                  className="bg-mint-aesthetic px-2 py-1 brutal-border text-black font-black"
                 >
                   IBelong
                 </a>{" "}
@@ -79,7 +79,7 @@ export default function AboutPage() {
               </span>
             </li>
             <li className="flex items-start">
-              <span className="mr-4 bg-red-400 px-2 py-1 brutal-border brutal-shadow-sm">
+              <span className="mr-4 bg-coral-aesthetic px-2 py-1 brutal-border brutal-shadow-sm">
                 —
               </span>
               <span>
@@ -87,13 +87,13 @@ export default function AboutPage() {
               </span>
             </li>
             <li className="flex items-start">
-              <span className="mr-4 bg-red-400 px-2 py-1 brutal-border brutal-shadow-sm">
+              <span className="mr-4 bg-coral-aesthetic px-2 py-1 brutal-border brutal-shadow-sm">
                 —
               </span>
               <span>Network with industry professionals and mentors</span>
             </li>
             <li className="flex items-start">
-              <span className="mr-4 bg-red-400 px-2 py-1 brutal-border brutal-shadow-sm">
+              <span className="mr-4 bg-coral-aesthetic px-2 py-1 brutal-border brutal-shadow-sm">
                 —
               </span>
               <span>Connect with other engineering students</span>
