@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-stone-300 relative overflow-hidden">
+    <main className="min-h-screen bg-[#f5f3f0] relative overflow-hidden">
       {/* Decorative Background Shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="decorative-shape shape-circle w-80 h-80 top-1/4 right-1/4 animate-float-slow"></div>
@@ -16,11 +16,11 @@ export default function AboutPage() {
           About
         </h1>
 
-        <div className="mb-20 border-b border-stone-400/40 pb-20 animate-fade-in-up delay-100">
-          <h2 className="text-sm font-light tracking-wider text-stone-700 uppercase mb-8 text-stone-900">
+        <div className="mb-20 border-b border-[#C40F0F]/30 pb-20 animate-fade-in-up delay-100">
+          <h2 className="text-sm font-light tracking-wider text-[#C40F0F] uppercase mb-8 text-stone-900">
             Our Mission
           </h2>
-          <div className="mb-10 overflow-hidden group rounded-sm shadow-sm">
+          <div className="mb-10 overflow-hidden group rounded-sm shadow-md">
             <Image
               src="/group_image_1.webp"
               alt="ARC team working together"
@@ -29,14 +29,14 @@ export default function AboutPage() {
               className="w-full h-auto group-hover:scale-105 transition-transform duration-700"
             />
           </div>
-          <p className="text-lg text-stone-800 leading-relaxed font-light mb-10 max-w-3xl">
+          <p className="text-lg text-stone-700 leading-relaxed font-light mb-10 max-w-3xl">
             Advanced RMIT Combat-Robotics (ARC) brings together students from
             all disciplines to design, build, and compete with combat robots.
             Our mission is to ignite the passion for combat robotics and provide
             hands-on experience in engineering, design, and innovation.
           </p>
 
-          <div className="mb-10 overflow-hidden group rounded-sm shadow-sm">
+          <div className="mb-10 overflow-hidden group rounded-sm shadow-md">
             <Image
               src="/group_image_2.webp"
               alt="ARC team collaboration"
@@ -45,7 +45,7 @@ export default function AboutPage() {
               className="w-full h-auto group-hover:scale-105 transition-transform duration-700"
             />
           </div>
-          <p className="text-lg text-stone-800 leading-relaxed font-light max-w-3xl">
+          <p className="text-lg text-stone-700 leading-relaxed font-light max-w-3xl">
             Whether you&apos;re a seasoned engineer or just curious about
             robotics, we welcome anyone with a passion for building and
             competing. Our collective provides the perfect environment to learn,
@@ -53,13 +53,13 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="border-b border-stone-400/40 pb-20 animate-fade-in-up delay-200">
-          <h2 className="text-sm font-light tracking-wider text-stone-700 uppercase mb-10 text-stone-900">
+        <div className="border-b border-[#C40F0F]/30 pb-20 animate-fade-in-up delay-200">
+          <h2 className="text-sm font-light tracking-wider text-[#C40F0F] uppercase mb-10 text-stone-900">
             What We Do
           </h2>
-          <ul className="text-stone-800 space-y-5 font-light text-lg">
+          <ul className="text-stone-700 space-y-5 font-light text-lg">
             <li className="flex items-start group">
-              <span className="mr-5 text-stone-600 group-hover:text-stone-900 transition-colors duration-300 text-xl leading-none pt-1">
+              <span className="mr-5 text-[#C40F0F] group-hover:text-[#a00d0d] transition-colors duration-300 text-xl leading-none pt-1">
                 —
               </span>
               <span className="group-hover:translate-x-2 transition-transform duration-300 leading-relaxed">
@@ -67,7 +67,7 @@ export default function AboutPage() {
               </span>
             </li>
             <li className="flex items-start group">
-              <span className="mr-5 text-stone-600 group-hover:text-stone-900 transition-colors duration-300 text-xl leading-none pt-1">
+              <span className="mr-5 text-[#C40F0F] group-hover:text-[#a00d0d] transition-colors duration-300 text-xl leading-none pt-1">
                 —
               </span>
               <span className="group-hover:translate-x-2 transition-transform duration-300 leading-relaxed">
@@ -76,7 +76,7 @@ export default function AboutPage() {
                   href="https://www.rmit.edu.au/about/our-values/diversity-and-inclusion/programs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-stone-900 border-b-2 border-stone-500 hover:border-stone-900 transition-colors duration-300"
+                  className="text-[#C40F0F] border-b-2 border-[#C40F0F]/50 hover:border-[#C40F0F] transition-colors duration-300"
                 >
                   IBelong
                 </a>{" "}
@@ -84,7 +84,7 @@ export default function AboutPage() {
               </span>
             </li>
             <li className="flex items-start group">
-              <span className="mr-5 text-stone-600 group-hover:text-stone-900 transition-colors duration-300 text-xl leading-none pt-1">
+              <span className="mr-5 text-[#C40F0F] group-hover:text-[#a00d0d] transition-colors duration-300 text-xl leading-none pt-1">
                 —
               </span>
               <span className="group-hover:translate-x-2 transition-transform duration-300 leading-relaxed">
@@ -92,7 +92,7 @@ export default function AboutPage() {
               </span>
             </li>
             <li className="flex items-start group">
-              <span className="mr-5 text-stone-600 group-hover:text-stone-900 transition-colors duration-300 text-xl leading-none pt-1">
+              <span className="mr-5 text-[#C40F0F] group-hover:text-[#a00d0d] transition-colors duration-300 text-xl leading-none pt-1">
                 —
               </span>
               <span className="group-hover:translate-x-2 transition-transform duration-300 leading-relaxed">
@@ -100,7 +100,7 @@ export default function AboutPage() {
               </span>
             </li>
             <li className="flex items-start group">
-              <span className="mr-5 text-stone-600 group-hover:text-stone-900 transition-colors duration-300 text-xl leading-none pt-1">
+              <span className="mr-5 text-[#C40F0F] group-hover:text-[#a00d0d] transition-colors duration-300 text-xl leading-none pt-1">
                 —
               </span>
               <span className="group-hover:translate-x-2 transition-transform duration-300 leading-relaxed">

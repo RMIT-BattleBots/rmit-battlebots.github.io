@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const Footer = () => (
-  <footer className="w-full bg-stone-300 border-t border-stone-400/30 mt-auto">
+  <footer className="w-full bg-white/60 border-t border-[#C40F0F]/20 mt-auto">
     <div className="max-w-6xl mx-auto px-6 lg:px-8 py-12">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         <div>
@@ -20,7 +20,7 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="hover:opacity-70 transition-opacity"
+            className="hover:opacity-70 transition-all duration-300 hover:scale-110"
           >
             <Image
               src="/linkedin.svg"
@@ -35,7 +35,7 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="hover:opacity-70 transition-opacity"
+            className="hover:opacity-70 transition-all duration-300 hover:scale-110"
           >
             <Image
               src="/instagram.svg"
@@ -50,7 +50,7 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="hover:opacity-70 transition-opacity"
+            className="hover:opacity-70 transition-all duration-300 hover:scale-110"
           >
             <Image
               src="/github-mark.svg"

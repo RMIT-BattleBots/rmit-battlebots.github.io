@@ -2,8 +2,9 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #d6d3d1;
+  --background: #f5f3f0;
   --foreground: #1c1917;
+  --accent-red: #C40F0F;
 }
 
 @theme {
@@ -20,7 +21,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: 
-    radial-gradient(circle at 1px 1px, rgba(0,0,0,0.03) 1px, transparent 0);
+    radial-gradient(circle at 1px 1px, rgba(0,0,0,0.02) 1px, transparent 0);
   background-size: 20px 20px;
   line-height: 1.7;
   font-size: 16px;
@@ -104,6 +105,24 @@ p {
   }
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
 @layer utilities {
   .animate-fade-in-up {
     animation: fadeInUp 0.8s ease-out forwards;
@@ -129,6 +148,14 @@ p {
     animation: slideIn 0.6s ease-out forwards;
   }
   
+  .animate-rotate {
+    animation: rotate 20s linear infinite;
+  }
+  
+  .animate-rotate-slow {
+    animation: rotateSlow 30s linear infinite;
+  }
+  
   .delay-100 {
     animation-delay: 0.1s;
   }
@@ -150,20 +177,20 @@ p {
   }
 }
 
-/* Decorative shapes */
+/* Decorative shapes with red accent */
 .decorative-shape {
   position: absolute;
-  opacity: 0.04;
+  opacity: 0.06;
   pointer-events: none;
 }
 
 .shape-circle {
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(196, 15, 15, 0.15);
 }
 
 .shape-square {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(196, 15, 15, 0.15);
   transform: rotate(45deg);
 }
 
@@ -172,7 +199,26 @@ p {
   height: 0;
   border-left: solid transparent;
   border-right: solid transparent;
-  border-bottom: solid rgba(0, 0, 0, 0.1);
+  border-bottom: solid rgba(196, 15, 15, 0.2);
+}
+
+/* Combat robotics decorative elements */
+.combat-element {
+  position: absolute;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.sawblade {
+  fill: rgba(196, 15, 15, 0.2);
+  stroke: rgba(196, 15, 15, 0.3);
+  stroke-width: 2;
+}
+
+.gear {
+  fill: rgba(196, 15, 15, 0.15);
+  stroke: rgba(196, 15, 15, 0.25);
+  stroke-width: 1.5;
 }
 
 /* Better section spacing */
