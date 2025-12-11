@@ -3,89 +3,113 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto px-8 py-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">
-          About RMIT BattleBots
+    <main className="min-h-screen bg-[#f5f3f0] relative overflow-hidden">
+      {/* Decorative Background Shapes */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="decorative-shape shape-circle w-80 h-80 top-1/4 right-1/4 animate-float-slow"></div>
+        <div className="decorative-shape shape-square w-64 h-64 bottom-1/3 -left-32 animate-float delay-300"></div>
+        <div className="decorative-shape shape-triangle border-l-[50px] border-r-[50px] border-b-[80px] top-1/2 left-1/4 animate-pulse-slow delay-200"></div>
+      </div>
+
+      <div className="max-w-5xl mx-auto px-6 lg:px-8 py-24 md:py-32 relative z-10">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight text-stone-900 mb-16 leading-tight animate-fade-in-up">
+          About
         </h1>
 
-        <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+        <div className="mb-20 border-b border-[#C40F0F]/30 pb-20 animate-fade-in-up delay-100">
+          <h2 className="text-sm font-light tracking-wider text-[#C40F0F] uppercase mb-8 text-stone-900">
             Our Mission
           </h2>
-          <div className="mb-6">
+          <div className="mb-10 overflow-hidden group rounded-sm shadow-md">
             <Image
               src="/group_image_1.webp"
-              alt="RMIT BattleBots team working together"
+              alt="ARC team working together"
               width={800}
               height={400}
-              className="w-full h-64 object-cover rounded-lg mb-4"
+              className="w-full h-auto group-hover:scale-105 transition-transform duration-700"
             />
           </div>
-          <p className="text-gray-600 mb-6">
-            We are the RMIT BattleBots Club, bringing together students from all
-            disciplines to design, build, and compete with our very own combat
-            bots! Our mission is to ignite the passion for combat robotics and
-            provide hands-on experience in engineering, design, and innovation.
+          <p className="text-lg text-stone-700 leading-relaxed font-light mb-10 max-w-3xl">
+            Advanced RMIT Combat-Robotics (ARC) brings together students from
+            all disciplines to design, build, and compete with combat robots.
+            Our mission is to ignite the passion for combat robotics and provide
+            hands-on experience in engineering, design, and innovation.
           </p>
 
-          <div className="mb-6">
+          <div className="mb-10 overflow-hidden group rounded-sm shadow-md">
             <Image
               src="/group_image_2.webp"
-              alt="BattleBots team collaboration"
+              alt="ARC team collaboration"
               width={800}
               height={400}
-              className="w-full h-64 object-cover rounded-lg mb-4"
+              className="w-full h-auto group-hover:scale-105 transition-transform duration-700"
             />
           </div>
-          <p className="text-gray-600 mb-6">
+          <p className="text-lg text-stone-700 leading-relaxed font-light max-w-3xl">
             Whether you&apos;re a seasoned engineer or just curious about
             robotics, we welcome anyone with a passion for building and
-            competing. Our club provides the perfect environment to learn,
-            create, and unleash your inner innovator!
+            competing. Our collective provides the perfect environment to learn,
+            create, and explore the boundaries of robotic innovation.
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+        <div className="border-b border-[#C40F0F]/30 pb-20 animate-fade-in-up delay-200">
+          <h2 className="text-sm font-light tracking-wider text-[#C40F0F] uppercase mb-10 text-stone-900">
             What We Do
           </h2>
-          <ul className="text-gray-600 space-y-3">
-            <li className="flex items-start">
-              <span className="text-blue-600 mr-2">•</span>
-              Design and build combat robots for competitions
+          <ul className="text-stone-700 space-y-5 font-light text-lg">
+            <li className="flex items-start group">
+              <span className="mr-5 text-[#C40F0F] group-hover:text-[#a00d0d] transition-colors duration-300 text-xl leading-none pt-1">
+                —
+              </span>
+              <span className="group-hover:translate-x-2 transition-transform duration-300 leading-relaxed">
+                Design and build combat robots for competitions
+              </span>
             </li>
-            <li className="flex items-start">
-              <span className="text-blue-600 mr-2">•</span>
-              <span>
+            <li className="flex items-start group">
+              <span className="mr-5 text-[#C40F0F] group-hover:text-[#a00d0d] transition-colors duration-300 text-xl leading-none pt-1">
+                —
+              </span>
+              <span className="group-hover:translate-x-2 transition-transform duration-300 leading-relaxed">
                 Work with{" "}
                 <a
                   href="https://www.rmit.edu.au/about/our-values/diversity-and-inclusion/programs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 underline"
+                  className="text-[#C40F0F] border-b-2 border-[#C40F0F]/50 hover:border-[#C40F0F] transition-colors duration-300"
                 >
                   IBelong
-                </a>
-                {"  "}
+                </a>{" "}
                 to deliver engineering workshops to highschools
               </span>
             </li>
-            <li className="flex items-start">
-              <span className="text-blue-600 mr-2">•</span>
-              Run workshops on robotics, electronics, and mechanical design
+            <li className="flex items-start group">
+              <span className="mr-5 text-[#C40F0F] group-hover:text-[#a00d0d] transition-colors duration-300 text-xl leading-none pt-1">
+                —
+              </span>
+              <span className="group-hover:translate-x-2 transition-transform duration-300 leading-relaxed">
+                Run workshops on robotics, electronics, and mechanical design
+              </span>
             </li>
-            <li className="flex items-start">
-              <span className="text-blue-600 mr-2">•</span>
-              Network with industry professionals and mentors
+            <li className="flex items-start group">
+              <span className="mr-5 text-[#C40F0F] group-hover:text-[#a00d0d] transition-colors duration-300 text-xl leading-none pt-1">
+                —
+              </span>
+              <span className="group-hover:translate-x-2 transition-transform duration-300 leading-relaxed">
+                Network with industry professionals and mentors
+              </span>
             </li>
-            <li className="flex items-start">
-              <span className="text-blue-600 mr-2">•</span>
-              Socialise with other engineering students
+            <li className="flex items-start group">
+              <span className="mr-5 text-[#C40F0F] group-hover:text-[#a00d0d] transition-colors duration-300 text-xl leading-none pt-1">
+                —
+              </span>
+              <span className="group-hover:translate-x-2 transition-transform duration-300 leading-relaxed">
+                Connect with other engineering students
+              </span>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
