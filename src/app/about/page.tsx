@@ -3,25 +3,17 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-[#0a0a0f] tech-grid relative">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 right-20 w-96 h-96 bg-teal-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
-      </div>
-
-      <div className="max-w-5xl mx-auto px-6 lg:px-8 py-20 md:py-32 relative z-10">
-        <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-white mb-12 neon-glow">
+    <main className="min-h-screen bg-stone-50">
+      <div className="max-w-4xl mx-auto px-6 lg:px-8 py-20 md:py-32">
+        <h1 className="text-5xl md:text-6xl font-light tracking-tight text-stone-900 mb-12">
           About
         </h1>
 
-        <div className="mb-16 border-b border-cyan-500/20 pb-16">
-          <div className="tech-card p-6 mb-8">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
-            <h2 className="text-2xl font-bold tracking-wide text-cyan-400 uppercase mb-6 neon-glow">
-              Our Mission
-            </h2>
-          </div>
-          <div className="mb-8 neon-border overflow-hidden">
+        <div className="mb-16 border-b border-stone-200 pb-16">
+          <h2 className="text-sm font-light tracking-wider text-stone-500 uppercase mb-6">
+            Our Mission
+          </h2>
+          <div className="mb-8">
             <Image
               src="/group_image_1.webp"
               alt="ARC team working together"
@@ -30,14 +22,14 @@ export default function AboutPage() {
               className="w-full h-auto"
             />
           </div>
-          <p className="text-gray-300 leading-relaxed font-medium mb-8 max-w-3xl text-lg">
+          <p className="text-stone-700 leading-relaxed font-light mb-8 max-w-2xl">
             Advanced RMIT Combat-Robotics (ARC) brings together students from
             all disciplines to design, build, and compete with combat robots.
             Our mission is to ignite the passion for combat robotics and provide
             hands-on experience in engineering, design, and innovation.
           </p>
 
-          <div className="mb-8 neon-border overflow-hidden">
+          <div className="mb-8">
             <Image
               src="/group_image_2.webp"
               alt="ARC team collaboration"
@@ -46,7 +38,7 @@ export default function AboutPage() {
               className="w-full h-auto"
             />
           </div>
-          <p className="text-gray-300 leading-relaxed font-medium max-w-3xl text-lg">
+          <p className="text-stone-700 leading-relaxed font-light max-w-2xl">
             Whether you&apos;re a seasoned engineer or just curious about
             robotics, we welcome anyone with a passion for building and
             competing. Our collective provides the perfect environment to learn,
@@ -54,27 +46,24 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="border-b border-cyan-500/20 pb-16">
-          <div className="tech-card p-6 mb-8">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500"></div>
-            <h2 className="text-2xl font-bold tracking-wide text-purple-400 uppercase mb-6">
-              What We Do
-            </h2>
-          </div>
-          <ul className="text-gray-300 space-y-4 font-medium text-lg">
+        <div className="border-b border-stone-200 pb-16">
+          <h2 className="text-sm font-light tracking-wider text-stone-500 uppercase mb-6">
+            What We Do
+          </h2>
+          <ul className="text-stone-700 space-y-4 font-light">
             <li className="flex items-start">
-              <span className="mr-4 text-cyan-400 text-2xl">▸</span>
+              <span className="mr-4 text-stone-400">—</span>
               <span>Design and build combat robots for competitions</span>
             </li>
             <li className="flex items-start">
-              <span className="mr-4 text-cyan-400 text-2xl">▸</span>
+              <span className="mr-4 text-stone-400">—</span>
               <span>
                 Work with{" "}
                 <a
                   href="https://www.rmit.edu.au/about/our-values/diversity-and-inclusion/programs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-cyan-400 hover:neon-glow underline font-semibold"
+                  className="text-stone-900 border-b border-stone-300 hover:border-stone-900 transition-colors"
                 >
                   IBelong
                 </a>{" "}
@@ -82,17 +71,17 @@ export default function AboutPage() {
               </span>
             </li>
             <li className="flex items-start">
-              <span className="mr-4 text-cyan-400 text-2xl">▸</span>
+              <span className="mr-4 text-stone-400">—</span>
               <span>
                 Run workshops on robotics, electronics, and mechanical design
               </span>
             </li>
             <li className="flex items-start">
-              <span className="mr-4 text-cyan-400 text-2xl">▸</span>
+              <span className="mr-4 text-stone-400">—</span>
               <span>Network with industry professionals and mentors</span>
             </li>
             <li className="flex items-start">
-              <span className="mr-4 text-cyan-400 text-2xl">▸</span>
+              <span className="mr-4 text-stone-400">—</span>
               <span>Connect with other engineering students</span>
             </li>
           </ul>

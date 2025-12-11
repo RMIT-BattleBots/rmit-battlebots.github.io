@@ -6,73 +6,66 @@ export default function BlogPage() {
   const posts = getAllBlogPosts();
 
   return (
-    <main className="min-h-screen bg-[#0a0a0f] tech-grid relative">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 right-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
-      </div>
-
-      <div className="max-w-5xl mx-auto px-6 lg:px-8 py-20 md:py-32 relative z-10">
+    <main className="min-h-screen bg-stone-50">
+      <div className="max-w-4xl mx-auto px-6 lg:px-8 py-20 md:py-32">
         {/* Header */}
         <div className="mb-20">
-          <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-white mb-6 neon-glow">
+          <h1 className="text-5xl md:text-6xl font-light tracking-tight text-stone-900 mb-4">
             Blog
           </h1>
-          <div className="tech-card p-6 max-w-2xl">
-            <p className="text-lg text-gray-300 leading-relaxed">
-              Build logs, competition highlights, and engineering insights from <span className="text-cyan-400 font-semibold">ARC</span>.
-            </p>
-          </div>
+          <p className="text-lg text-stone-600 font-light leading-relaxed max-w-2xl">
+            Build logs, competition highlights, and engineering insights from ARC.
+          </p>
         </div>
 
         {/* Blog Posts */}
         {posts.length === 0 ? (
-          <div className="py-20 tech-card p-8 text-center">
-            <p className="text-gray-400 text-lg">No posts yet. Check back soon.</p>
+          <div className="py-20">
+            <p className="text-stone-500 font-light">No posts yet. Check back soon.</p>
           </div>
         ) : (
-          <div className="space-y-12">
+          <div className="space-y-16">
             {posts.map((post) => (
-              <article key={post.slug} className="tech-card p-8 hover:neon-border transition-all group">
-                <Link href={`/blog/${post.slug}`} className="block">
+              <article key={post.slug} className="border-b border-stone-200 pb-16 last:border-0">
+                <Link href={`/blog/${post.slug}`} className="group block">
                   {/* Featured Image */}
                   {post.featuredImage ? (
-                    <div className="relative w-full h-64 md:h-96 mb-8 overflow-hidden neon-border">
+                    <div className="relative w-full h-64 md:h-96 mb-8 overflow-hidden bg-stone-100">
                       <Image
                         src={post.featuredImage}
                         alt={post.title}
                         fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        className="object-cover group-hover:opacity-90 transition-opacity"
                         sizes="(max-width: 768px) 100vw, 896px"
                       />
                     </div>
                   ) : (
-                    <div className="w-full h-64 md:h-96 mb-8 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 neon-border flex items-center justify-center">
-                      <span className="text-8xl opacity-50">🤖</span>
+                    <div className="w-full h-64 md:h-96 mb-8 bg-stone-100 flex items-center justify-center">
+                      <span className="text-6xl opacity-20">🤖</span>
                     </div>
                   )}
                   
                   {/* Content */}
                   <div className="mb-4">
-                    <div className="flex items-center gap-3 text-xs font-mono tracking-wide text-gray-500 mb-4">
+                    <div className="flex items-center gap-3 text-xs font-light tracking-wide text-stone-500 mb-4">
                       <time>{new Date(post.date).toLocaleDateString('en-US', { 
                         year: 'numeric', 
                         month: 'long', 
                         day: 'numeric' 
                       })}</time>
-                      <span className="text-cyan-400">•</span>
+                      <span>•</span>
                       <span>{post.author}</span>
                     </div>
                     
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
+                    <h2 className="text-3xl md:text-4xl font-light text-stone-900 mb-4 group-hover:text-stone-700 transition-colors">
                       {post.title}
                     </h2>
                     
-                    <p className="text-gray-300 leading-relaxed mb-6 text-lg">
+                    <p className="text-stone-600 font-light leading-relaxed mb-6">
                       {post.excerpt}
                     </p>
                     
-                    <span className="text-cyan-400 font-semibold tracking-wide uppercase text-sm inline-flex items-center gap-2 group-hover:neon-glow transition-all">
+                    <span className="text-sm font-light tracking-wide text-stone-900 group-hover:underline">
                       Read more →
                     </span>
                   </div>
