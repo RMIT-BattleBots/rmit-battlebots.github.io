@@ -2,21 +2,21 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #ffffff;
-  --foreground: #000000;
-  --accent-purple: #a78bfa;
-  --accent-teal: #2dd4bf;
-  --accent-coral: #fb7185;
-  --accent-mint: #6ee7b7;
-  --accent-lavender: #c4b5fd;
-  --accent-rose: #fda4af;
+  --background: #0a0a0f;
+  --foreground: #e0e0e0;
+  --neon-cyan: #00f0ff;
+  --neon-blue: #0066ff;
+  --neon-purple: #8b5cf6;
+  --electric-blue: #3b82f6;
+  --tech-green: #10b981;
+  --metallic-gray: #1e293b;
 }
 
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-  --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', monospace;
 }
 
 body {
@@ -27,49 +27,63 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Neo-brutalism utilities */
+/* Futuristic robotic utilities */
 @layer utilities {
-  .brutal-shadow {
-    box-shadow: 8px 8px 0px 0px #000000;
+  .tech-grid {
+    background-image: 
+      linear-gradient(rgba(0, 240, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 240, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
   }
   
-  .brutal-shadow-sm {
-    box-shadow: 4px 4px 0px 0px #000000;
+  .neon-glow {
+    text-shadow: 
+      0 0 10px rgba(0, 240, 255, 0.8),
+      0 0 20px rgba(0, 240, 255, 0.6),
+      0 0 30px rgba(0, 240, 255, 0.4);
   }
   
-  .brutal-border {
-    border: 4px solid #000000;
+  .neon-glow-blue {
+    text-shadow: 
+      0 0 10px rgba(59, 130, 246, 0.8),
+      0 0 20px rgba(59, 130, 246, 0.6);
   }
   
-  .brutal-border-thick {
-    border: 6px solid #000000;
+  .neon-border {
+    border: 2px solid #00f0ff;
+    box-shadow: 
+      0 0 10px rgba(0, 240, 255, 0.5),
+      inset 0 0 10px rgba(0, 240, 255, 0.1);
   }
   
-  .bg-purple-aesthetic {
-    background-color: #a78bfa;
+  .tech-card {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+    border: 1px solid rgba(0, 240, 255, 0.3);
+    backdrop-filter: blur(10px);
   }
   
-  .bg-teal-aesthetic {
-    background-color: #2dd4bf;
+  .holographic {
+    background: linear-gradient(135deg, rgba(0, 240, 255, 0.1) 0%, rgba(139, 92, 246, 0.1) 50%, rgba(59, 130, 246, 0.1) 100%);
   }
   
-  .bg-coral-aesthetic {
-    background-color: #fb7185;
+  .scan-line {
+    position: relative;
+    overflow: hidden;
   }
   
-  .bg-mint-aesthetic {
-    background-color: #6ee7b7;
+  .scan-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.3), transparent);
+    animation: scan 3s infinite;
   }
   
-  .bg-lavender-aesthetic {
-    background-color: #c4b5fd;
-  }
-  
-  .bg-rose-aesthetic {
-    background-color: #fda4af;
-  }
-  
-  .bg-cream-aesthetic {
-    background-color: #fef3c7;
+  @keyframes scan {
+    0% { left: -100%; }
+    100% { left: 100%; }
   }
 }

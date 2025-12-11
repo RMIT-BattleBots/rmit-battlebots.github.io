@@ -2,19 +2,17 @@ import Image from "next/image";
 import React from "react";
 
 const Footer = () => (
-  <footer className="w-full bg-lavender-aesthetic brutal-border-t mt-auto">
-    <div className="max-w-6xl mx-auto px-6 lg:px-8 py-12">
+  <footer className="w-full bg-[#0a0a0f] border-t border-cyan-500/20 mt-auto">
+    <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
-        <div className="brutal-border bg-white p-4 brutal-shadow-sm">
-          <p className="text-sm font-black text-black mb-2 uppercase">
+        <div className="tech-card p-4">
+          <p className="text-sm font-semibold text-gray-400 mb-2 uppercase">
             Advanced RMIT Combat-Robotics
           </p>
-          <p className="text-xs font-black text-black">
+          <p className="text-xs font-medium text-gray-500">
             © {new Date().getFullYear()}{" "}
-            <span className="bg-purple-aesthetic text-black px-2 py-1">
-              ARC
-            </span>
-            . All rights reserved.
+            <span className="text-cyan-400 font-semibold">ARC</span>. All rights
+            reserved.
           </p>
         </div>
 
@@ -24,14 +22,14 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="brutal-border bg-black p-2 brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
+            className="tech-card p-2 hover:neon-border transition-all"
           >
             <Image
               src="/linkedin.svg"
               alt="LinkedIn"
               width={20}
               height={20}
-              className="brightness-0 invert"
+              className="brightness-0 invert opacity-60 hover:opacity-100"
             />
           </a>
           <a
@@ -39,14 +37,14 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="brutal-border bg-black p-2 brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
+            className="tech-card p-2 hover:neon-border transition-all"
           >
             <Image
               src="/instagram.svg"
               alt="Instagram"
               width={20}
               height={20}
-              className="brightness-0 invert"
+              className="brightness-0 invert opacity-60 hover:opacity-100"
             />
           </a>
           <a
@@ -54,14 +52,14 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="brutal-border bg-black p-2 brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
+            className="tech-card p-2 hover:neon-border transition-all"
           >
             <Image
               src="/github-mark.svg"
               alt="GitHub"
               width={20}
               height={20}
-              className="brightness-0 invert"
+              className="brightness-0 invert opacity-60 hover:opacity-100"
             />
           </a>
         </div>
