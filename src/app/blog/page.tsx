@@ -6,48 +6,50 @@ export default function BlogPage() {
   const posts = getAllBlogPosts();
 
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-white">
       <div className="max-w-4xl mx-auto px-6 lg:px-8 py-20 md:py-32">
         {/* Header */}
         <div className="mb-20">
-          <h1 className="text-5xl md:text-6xl font-light tracking-tight text-white mb-4">
+          <h1 className="text-6xl md:text-8xl font-black tracking-tight text-black mb-6 uppercase">
             Blog
           </h1>
-          <p className="text-lg text-gray-400 font-light leading-relaxed max-w-2xl">
-            Build logs, competition highlights, and engineering insights from <span className="text-cyan-400">ARC</span>.
-          </p>
+          <div className="brutal-border bg-cyan-400 p-6 brutal-shadow-sm max-w-2xl">
+            <p className="text-lg text-black font-bold leading-tight">
+              Build logs, competition highlights, and engineering insights from <span className="bg-yellow-300 px-2 py-1">ARC</span>.
+            </p>
+          </div>
         </div>
 
         {/* Blog Posts */}
         {posts.length === 0 ? (
-          <div className="py-20">
-            <p className="text-gray-500 font-light">No posts yet. Check back soon.</p>
+          <div className="py-20 brutal-border bg-yellow-300 p-8 brutal-shadow-sm">
+            <p className="text-black font-black text-lg">No posts yet. Check back soon.</p>
           </div>
         ) : (
-          <div className="space-y-16">
+          <div className="space-y-12">
             {posts.map((post) => (
-              <article key={post.slug} className="border-b border-cyan-500/20 pb-16 last:border-0">
+              <article key={post.slug} className="brutal-border bg-white p-8 brutal-shadow hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all">
                 <Link href={`/blog/${post.slug}`} className="group block">
                   {/* Featured Image */}
                   {post.featuredImage ? (
-                    <div className="relative w-full h-64 md:h-96 mb-8 overflow-hidden bg-gray-900">
+                    <div className="relative w-full h-64 md:h-96 mb-8 overflow-hidden brutal-border bg-black">
                       <Image
                         src={post.featuredImage}
                         alt={post.title}
                         fill
-                        className="object-cover group-hover:opacity-80 transition-opacity"
+                        className="object-cover"
                         sizes="(max-width: 768px) 100vw, 896px"
                       />
                     </div>
                   ) : (
-                    <div className="w-full h-64 md:h-96 mb-8 bg-gradient-to-br from-cyan-950/50 to-cyan-900/30 flex items-center justify-center border border-cyan-500/20">
-                      <span className="text-6xl opacity-20">🤖</span>
+                    <div className="w-full h-64 md:h-96 mb-8 bg-cyan-400 brutal-border flex items-center justify-center">
+                      <span className="text-8xl">🤖</span>
                     </div>
                   )}
                   
                   {/* Content */}
                   <div className="mb-4">
-                    <div className="flex items-center gap-3 text-xs font-light tracking-wide text-gray-500 mb-4">
+                    <div className="flex items-center gap-3 text-sm font-black tracking-wide text-black mb-4">
                       <time>{new Date(post.date).toLocaleDateString('en-US', { 
                         year: 'numeric', 
                         month: 'long', 
@@ -57,15 +59,15 @@ export default function BlogPage() {
                       <span>{post.author}</span>
                     </div>
                     
-                    <h2 className="text-3xl md:text-4xl font-light text-white mb-4 group-hover:text-cyan-400 transition-colors">
+                    <h2 className="text-4xl md:text-5xl font-black text-black mb-4 uppercase">
                       {post.title}
                     </h2>
                     
-                    <p className="text-gray-400 font-light leading-relaxed mb-6">
+                    <p className="text-black font-bold leading-tight mb-6 text-lg">
                       {post.excerpt}
                     </p>
                     
-                    <span className="text-sm font-light tracking-wide text-cyan-400 group-hover:text-cyan-300 group-hover:glow-cyan-sm transition-all">
+                    <span className="brutal-border bg-black text-white px-4 py-2 text-sm font-black tracking-wide uppercase brutal-shadow-sm inline-block group-hover:translate-x-1 group-hover:translate-y-1 group-hover:shadow-none transition-all">
                       Read more →
                     </span>
                   </div>

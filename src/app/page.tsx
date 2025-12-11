@@ -3,38 +3,42 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-yellow-300">
       {/* Hero Section */}
-      <section className="border-b border-cyan-500/20 bg-gradient-to-b from-cyan-950/20 via-black to-black">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 py-32 md:py-40">
+      <section className="brutal-border-b bg-yellow-300">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 py-20 md:py-32">
           <div className="mb-12">
-            <Image
-              src="/robot_logo.svg"
-              alt="ARC Logo"
-              width={64}
-              height={64}
-              className="mb-8 opacity-80 brightness-0 invert"
-            />
+            <div className="brutal-border bg-white p-4 inline-block brutal-shadow-sm">
+              <Image
+                src="/robot_logo.svg"
+                alt="ARC Logo"
+                width={64}
+                height={64}
+                className="mb-0"
+              />
+            </div>
           </div>
-          <h1 className="text-5xl md:text-7xl font-light tracking-tight text-white mb-6 leading-tight">
+          <h1 className="text-6xl md:text-8xl font-black tracking-tight text-black mb-6 leading-tight uppercase">
             Advanced RMIT
             <br />
-            <span className="text-cyan-400 glow-cyan-sm">Combat-Robotics</span>
+            <span className="bg-cyan-400 text-black px-4 py-2 inline-block brutal-shadow-sm">
+              Combat-Robotics
+            </span>
           </h1>
-          <p className="text-xl md:text-2xl font-light text-gray-400 mb-12 leading-relaxed max-w-2xl">
+          <p className="text-xl md:text-2xl font-bold text-black mb-12 leading-tight max-w-2xl">
             A student-led engineering collective building combat robots and
             exploring the boundaries of robotics innovation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/blog"
-              className="inline-block border border-cyan-400/50 text-cyan-400 px-8 py-3 text-sm font-light tracking-wide hover:bg-cyan-400/10 hover:border-cyan-400 hover:glow-cyan-sm transition-all"
+              className="brutal-border bg-white text-black px-8 py-4 text-base font-black tracking-wide uppercase brutal-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
             >
               View Work
             </Link>
             <Link
               href="#about"
-              className="inline-block text-gray-400 px-8 py-3 text-sm font-light tracking-wide hover:text-cyan-400 transition-colors"
+              className="brutal-border bg-black text-white px-8 py-4 text-base font-black tracking-wide uppercase brutal-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
             >
               Learn More →
             </Link>
@@ -43,44 +47,43 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="border-b border-cyan-500/20">
+      <section id="about" className="brutal-border-b bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 py-24 md:py-32">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
-            <div>
-              <h2 className="text-sm font-light tracking-wider text-cyan-400 uppercase mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+            <div className="brutal-border bg-cyan-400 p-6 brutal-shadow-sm">
+              <h2 className="text-lg font-black tracking-wide text-black uppercase mb-4">
                 What We Do
               </h2>
-              <p className="text-gray-400 leading-relaxed font-light">
+              <p className="text-black font-bold leading-tight">
                 Design, build, and compete with combat robots. We bring together
-                students from various engineering disciplines to create
-                innovative robotic systems.
+                students from various engineering disciplines.
               </p>
             </div>
-            <div>
-              <h2 className="text-sm font-light tracking-wider text-cyan-400 uppercase mb-4">
+            <div className="brutal-border bg-yellow-300 p-6 brutal-shadow-sm">
+              <h2 className="text-lg font-black tracking-wide text-black uppercase mb-4">
                 Our Approach
               </h2>
-              <p className="text-gray-400 leading-relaxed font-light">
+              <p className="text-black font-bold leading-tight">
                 Hands-on learning through real projects. We believe the best way
-                to learn engineering is by building machines that can withstand
-                combat.
+                to learn engineering is by building machines.
               </p>
             </div>
-            <div>
-              <h2 className="text-sm font-light tracking-wider text-cyan-400 uppercase mb-4">
+            <div className="brutal-border bg-red-400 p-6 brutal-shadow-sm">
+              <h2 className="text-lg font-black tracking-wide text-black uppercase mb-4">
                 Community
               </h2>
-              <p className="text-gray-400 leading-relaxed font-light">
+              <p className="text-black font-bold leading-tight">
                 A collaborative space for passionate engineers to share
-                knowledge, work on projects, and push the boundaries of
-                what&apos;s possible.
+                knowledge and push boundaries.
               </p>
             </div>
           </div>
 
-          <div className="pt-16 border-t border-cyan-500/20">
-            <h2 className="text-3xl font-light text-white mb-6">About ARC</h2>
-            <div className="space-y-6 text-gray-400 leading-relaxed font-light max-w-2xl">
+          <div className="pt-16 brutal-border-t">
+            <h2 className="text-5xl font-black text-black mb-6 uppercase">
+              About ARC
+            </h2>
+            <div className="space-y-6 text-black leading-relaxed font-bold max-w-2xl">
               <p>
                 Advanced RMIT Combat-Robotics (ARC) is a student-run engineering
                 collective dedicated to building combat robots and inspiring
@@ -98,7 +101,7 @@ export default function Home() {
             <div className="mt-12">
               <Link
                 href="/blog"
-                className="inline-block text-cyan-400 text-sm font-light tracking-wide hover:text-cyan-300 hover:glow-cyan-sm transition-all"
+                className="brutal-border bg-black text-white px-6 py-3 text-sm font-black tracking-wide uppercase brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all inline-block"
               >
                 Explore our work →
               </Link>
@@ -108,19 +111,21 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="border-b border-cyan-500/20 bg-gradient-to-b from-black to-cyan-950/10">
+      <section className="brutal-border-b bg-cyan-400">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 py-24 md:py-32">
-          <h2 className="text-3xl font-light text-white mb-8">Connect</h2>
-          <p className="text-gray-400 mb-12 font-light leading-relaxed max-w-xl">
+          <h2 className="text-5xl font-black text-black mb-8 uppercase">
+            Connect
+          </h2>
+          <p className="text-black mb-12 font-bold leading-tight max-w-xl text-lg">
             Follow our journey, see our builds, and stay updated with
             competition highlights and engineering insights.
           </p>
-          <div className="flex flex-wrap gap-6">
+          <div className="flex flex-wrap gap-4">
             <a
               href="https://www.instagram.com/rmitarc/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-cyan-400 text-sm font-light tracking-wide transition-colors"
+              className="brutal-border bg-white text-black px-6 py-3 text-sm font-black tracking-wide uppercase brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
             >
               Instagram
             </a>
@@ -128,7 +133,7 @@ export default function Home() {
               href="https://www.linkedin.com/company/advanced-rmit-combat-roboticsrmit-battlebots"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-cyan-400 text-sm font-light tracking-wide transition-colors"
+              className="brutal-border bg-white text-black px-6 py-3 text-sm font-black tracking-wide uppercase brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
             >
               LinkedIn
             </a>
@@ -136,7 +141,7 @@ export default function Home() {
               href="https://github.com/RMIT-BattleBots"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-cyan-400 text-sm font-light tracking-wide transition-colors"
+              className="brutal-border bg-white text-black px-6 py-3 text-sm font-black tracking-wide uppercase brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
             >
               GitHub
             </a>

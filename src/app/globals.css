@@ -2,8 +2,8 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #e5e5e5;
+  --background: #ffffff;
+  --foreground: #000000;
 }
 
 @theme {
@@ -19,21 +19,23 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: "kern" 1;
-  text-rendering: optimizeLegibility;
 }
 
-/* Futuristic glow effects */
+/* Neo-brutalism utilities */
 @layer utilities {
-  .glow-cyan {
-    text-shadow: 0 0 10px rgba(34, 211, 238, 0.5), 0 0 20px rgba(34, 211, 238, 0.3);
+  .brutal-shadow {
+    box-shadow: 8px 8px 0px 0px #000000;
   }
   
-  .glow-cyan-sm {
-    text-shadow: 0 0 5px rgba(34, 211, 238, 0.4);
+  .brutal-shadow-sm {
+    box-shadow: 4px 4px 0px 0px #000000;
   }
   
-  .border-glow {
-    box-shadow: 0 0 10px rgba(34, 211, 238, 0.3), inset 0 0 10px rgba(34, 211, 238, 0.1);
+  .brutal-border {
+    border: 4px solid #000000;
+  }
+  
+  .brutal-border-thick {
+    border: 6px solid #000000;
   }
 }

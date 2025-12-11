@@ -36,12 +36,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const htmlContent = await markdownToHtml(post.content);
 
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-white">
       {/* Back Button */}
       <div className="max-w-4xl mx-auto px-6 lg:px-8 pt-12">
         <Link
           href="/blog"
-          className="inline-flex items-center text-gray-400 hover:text-cyan-400 text-sm font-light tracking-wide mb-12 transition-colors"
+          className="brutal-border bg-black text-white px-4 py-2 text-sm font-black tracking-wide uppercase brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all inline-block mb-12"
         >
           ← Back to Blog
         </Link>
@@ -49,12 +49,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
       <article className="max-w-4xl mx-auto px-6 lg:px-8 pb-24">
         {/* Header */}
-        <header className="mb-12 border-b border-cyan-500/20 pb-12">
-          <h1 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-6 leading-tight">
+        <header className="mb-12 brutal-border-b pb-12">
+          <h1 className="text-5xl md:text-6xl font-black text-black mb-6 leading-tight uppercase">
             {post.title}
           </h1>
           
-          <div className="flex items-center gap-3 text-xs font-light tracking-wide text-gray-500">
+          <div className="flex items-center gap-3 text-sm font-black tracking-wide text-black mb-8">
             <time>{new Date(post.date).toLocaleDateString('en-US', { 
               year: 'numeric', 
               month: 'long', 
@@ -65,7 +65,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
 
           {post.featuredImage && (
-            <div className="relative w-full h-64 md:h-96 mt-12 overflow-hidden bg-gray-900">
+            <div className="relative w-full h-64 md:h-96 mt-12 overflow-hidden brutal-border bg-black">
               <Image
                 src={post.featuredImage}
                 alt={post.title}
@@ -80,19 +80,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         {/* Content */}
         <div 
-          className="prose prose-lg max-w-none prose-invert
-            prose-headings:text-white prose-headings:font-light prose-headings:tracking-tight
+          className="prose prose-lg max-w-none
+            prose-headings:text-black prose-headings:font-black prose-headings:tracking-tight prose-headings:uppercase
             prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl
-            prose-p:text-gray-400 prose-p:leading-relaxed prose-p:font-light
-            prose-a:text-cyan-400 prose-a:no-underline hover:prose-a:underline prose-a:border-b prose-a:border-cyan-500/30 hover:prose-a:border-cyan-400
-            prose-strong:text-white prose-strong:font-normal
-            prose-code:text-cyan-400 prose-code:bg-cyan-950/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-light prose-code:border prose-code:border-cyan-500/20
-            prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-none prose-pre:border prose-pre:border-cyan-500/20
-            prose-img:my-12 prose-img:w-full prose-img:h-auto
-            prose-blockquote:border-l prose-blockquote:border-cyan-500/50 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-gray-400 prose-blockquote:font-light prose-blockquote:my-8
-            prose-ul:list-none prose-ol:list-none prose-li:text-gray-400 prose-li:font-light prose-li:mb-2
+            prose-p:text-black prose-p:leading-relaxed prose-p:font-bold prose-p:text-lg
+            prose-a:text-black prose-a:no-underline prose-a:bg-yellow-300 prose-a:px-1 prose-a:font-black
+            prose-strong:text-black prose-strong:font-black
+            prose-code:text-black prose-code:bg-cyan-400 prose-code:px-2 prose-code:py-1 prose-code:font-black prose-code:brutal-border prose-code:border-2
+            prose-pre:bg-black prose-pre:text-white prose-pre:brutal-border prose-pre:border-4 prose-pre:p-4
+            prose-img:my-12 prose-img:w-full prose-img:h-auto prose-img:brutal-border prose-img:border-4
+            prose-blockquote:border-l-4 prose-blockquote:border-black prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-black prose-blockquote:font-bold prose-blockquote:my-8 prose-blockquote:bg-yellow-300 prose-blockquote:py-2
+            prose-ul:list-none prose-ol:list-none prose-li:text-black prose-li:font-bold prose-li:mb-2
             prose-ul:space-y-2 prose-ol:space-y-2
-            prose-hr:border-cyan-500/20 prose-hr:my-12"
+            prose-hr:border-black prose-hr:border-4 prose-hr:my-12"
           dangerouslySetInnerHTML={{ __html: htmlContent }}
         />
       </article>

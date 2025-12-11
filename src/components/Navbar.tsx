@@ -4,31 +4,32 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="w-full bg-black/80 backdrop-blur-sm sticky top-0 z-50 border-b border-cyan-500/20">
+    <nav className="w-full bg-white brutal-border-b sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link
             href="/"
-            className="flex items-center gap-3 hover:opacity-70 transition-opacity group"
+            className="flex items-center gap-3 group"
             aria-label="Go to home page"
           >
-            <Image
-              src="/robot_logo.svg"
-              alt="ARC Logo"
-              width={32}
-              height={32}
-              className="group-hover:opacity-80 transition-opacity brightness-0 invert"
-            />
-            <span className="text-lg font-light tracking-wide text-white group-hover:text-cyan-400 transition-colors">
+            <div className="brutal-border bg-yellow-300 p-2 brutal-shadow-sm group-hover:translate-x-1 group-hover:translate-y-1 group-hover:shadow-none transition-all">
+              <Image
+                src="/robot_logo.svg"
+                alt="ARC Logo"
+                width={32}
+                height={32}
+              />
+            </div>
+            <span className="text-2xl font-black tracking-wide text-black uppercase">
               ARC
             </span>
           </Link>
 
-          <ul className="hidden md:flex items-center gap-8 text-sm font-light tracking-wide">
+          <ul className="hidden md:flex items-center gap-6 text-base font-black tracking-wide uppercase">
             <li>
               <Link
                 href="/blog"
-                className="text-gray-400 hover:text-cyan-400 transition-colors"
+                className="brutal-border bg-black text-white px-4 py-2 brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
               >
                 Blog
               </Link>
@@ -36,7 +37,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/about"
-                className="text-gray-400 hover:text-cyan-400 transition-colors"
+                className="brutal-border bg-cyan-400 text-black px-4 py-2 brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
               >
                 About
               </Link>
@@ -44,7 +45,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/contact"
-                className="text-gray-400 hover:text-cyan-400 transition-colors"
+                className="brutal-border bg-yellow-300 text-black px-4 py-2 brutal-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
               >
                 Contact
               </Link>
@@ -54,11 +55,11 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
-              className="text-gray-400 hover:text-cyan-400 transition-colors"
+              className="brutal-border bg-black text-white p-2 brutal-shadow-sm"
               aria-label="Menu"
             >
               <svg
-                className="w-5 h-5"
+                className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -66,7 +67,7 @@ export default function Navbar() {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={1.5}
+                  strokeWidth={3}
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
