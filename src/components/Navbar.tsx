@@ -4,35 +4,77 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="w-full flex items-center justify-between px-8 py-4 shadow-md bg-white text-gray-900">
-      <Link
-        href="/"
-        className="flex items-center gap-3 hover:opacity-80 transition-opacity"
-        aria-label="Go to home page"
-      >
-        <Image src="/robot_logo.svg" alt="Robot Logo" width={40} height={40} />
-        <span className="font-bold text-xl">RMIT Battlebots</span>
-      </Link>
-      <ul className="flex gap-8 text-lg font-medium">
-        <li>
-          <Link href="#">Blog</Link>
-        </li>
-        <li>
-          <Link href="#">Contact Us</Link>
-        </li>
-        <li>
-          <Link href="#">About</Link>
-        </li>
-        <li>
-          <Link href="#">Our Committee</Link>
-        </li>
-        <li>
-          <Link href="#">Our Bots</Link>
-        </li>
-        <li>
-          <Link href="#">Membership</Link>
-        </li>
-      </ul>
+    <nav className="w-full bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-100">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
+          <Link
+            href="/"
+            className="flex items-center gap-3 hover:opacity-70 transition-opacity"
+            aria-label="Go to home page"
+          >
+            <Image 
+              src="/robot_logo.svg" 
+              alt="ARC Logo" 
+              width={32} 
+              height={32}
+            />
+            <span className="text-lg font-light tracking-wide text-gray-900">
+              ARC
+            </span>
+          </Link>
+          
+          <ul className="hidden md:flex items-center gap-8 text-sm font-light tracking-wide">
+            <li>
+              <Link 
+                href="/blog"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/#about"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/rmit-battlebots"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+              aria-label="Menu"
+            >
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </nav>
   );
 }

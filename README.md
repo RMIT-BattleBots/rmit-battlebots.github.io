@@ -1,6 +1,6 @@
-# 🤖 RMIT BattleBots Website
+# 🤖 Advanced RMIT Combat-Robotics (ARC) Website
 
-Welcome to the official website for **RMIT BattleBots** - a student-run engineering club building combat robots and inspiring hands-on innovation through tech, teamwork, and friendly destruction.
+Welcome to the official website for **Advanced RMIT Combat-Robotics (ARC)** - a student-run engineering collective building combat robots and inspiring hands-on innovation through tech, teamwork, and engineering excellence.
 
 This site is used to share our events, showcase our bots, and connect with the community.
 
@@ -42,7 +42,7 @@ Visit [http://localhost:3000](http://localhost:3000) to see the site.
 
 ## 🤝 Contributing
 
-We welcome contributions from the community and club members!
+We welcome contributions from the community and members!
 
 Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to get started.
 
