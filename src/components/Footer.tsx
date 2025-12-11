@@ -10,7 +10,8 @@ const Footer = () => (
             Advanced RMIT Combat-Robotics
           </p>
           <p className="text-xs font-light text-gray-400">
-            © {new Date().getFullYear()} ARC. All rights reserved.
+            © {new Date().getFullYear()}{" "}
+            <span className="text-indigo-600">ARC</span>. All rights reserved.
           </p>
         </div>
 
@@ -27,7 +28,7 @@ const Footer = () => (
               alt="LinkedIn"
               width={20}
               height={20}
-              className="opacity-60"
+              className="opacity-60 hover:opacity-100 transition-opacity"
             />
           </a>
           <a
@@ -42,7 +43,7 @@ const Footer = () => (
               alt="Instagram"
               width={20}
               height={20}
-              className="opacity-60"
+              className="opacity-60 hover:opacity-100 transition-opacity"
             />
           </a>
           <a
@@ -57,7 +58,7 @@ const Footer = () => (
               alt="GitHub"
               width={20}
               height={20}
-              className="opacity-60"
+              className="opacity-60 hover:opacity-100 transition-opacity"
             />
           </a>
         </div>

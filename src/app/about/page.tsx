@@ -10,7 +10,7 @@ export default function AboutPage() {
         </h1>
 
         <div className="mb-16 border-b border-gray-100 pb-16">
-          <h2 className="text-sm font-light tracking-wider text-gray-500 uppercase mb-6">
+          <h2 className="text-sm font-light tracking-wider text-indigo-600 uppercase mb-6">
             Our Mission
           </h2>
           <div className="mb-8">
@@ -47,23 +47,23 @@ export default function AboutPage() {
         </div>
 
         <div className="border-b border-gray-100 pb-16">
-          <h2 className="text-sm font-light tracking-wider text-gray-500 uppercase mb-6">
+          <h2 className="text-sm font-light tracking-wider text-indigo-600 uppercase mb-6">
             What We Do
           </h2>
           <ul className="text-gray-700 space-y-4 font-light">
             <li className="flex items-start">
-              <span className="mr-4 text-gray-400">—</span>
+              <span className="mr-4 text-indigo-400">—</span>
               <span>Design and build combat robots for competitions</span>
             </li>
             <li className="flex items-start">
-              <span className="mr-4 text-gray-400">—</span>
+              <span className="mr-4 text-indigo-400">—</span>
               <span>
                 Work with{" "}
                 <a
                   href="https://www.rmit.edu.au/about/our-values/diversity-and-inclusion/programs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-900 border-b border-gray-300 hover:border-gray-900 transition-colors"
+                  className="text-indigo-600 border-b border-indigo-200 hover:border-indigo-600 transition-colors"
                 >
                   IBelong
                 </a>{" "}
@@ -71,17 +71,17 @@ export default function AboutPage() {
               </span>
             </li>
             <li className="flex items-start">
-              <span className="mr-4 text-gray-400">—</span>
+              <span className="mr-4 text-indigo-400">—</span>
               <span>
                 Run workshops on robotics, electronics, and mechanical design
               </span>
             </li>
             <li className="flex items-start">
-              <span className="mr-4 text-gray-400">—</span>
+              <span className="mr-4 text-indigo-400">—</span>
               <span>Network with industry professionals and mentors</span>
             </li>
             <li className="flex items-start">
-              <span className="mr-4 text-gray-400">—</span>
+              <span className="mr-4 text-indigo-400">—</span>
               <span>Connect with other engineering students</span>
             </li>
           </ul>

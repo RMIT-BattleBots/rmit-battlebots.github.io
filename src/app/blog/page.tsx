@@ -14,7 +14,7 @@ export default function BlogPage() {
             Blog
           </h1>
           <p className="text-lg text-gray-600 font-light leading-relaxed max-w-2xl">
-            Build logs, competition highlights, and engineering insights from ARC.
+            Build logs, competition highlights, and engineering insights from <span className="text-indigo-600">ARC</span>.
           </p>
         </div>
 
@@ -40,8 +40,8 @@ export default function BlogPage() {
                       />
                     </div>
                   ) : (
-                    <div className="w-full h-64 md:h-96 mb-8 bg-gray-50 flex items-center justify-center">
-                      <span className="text-6xl opacity-20">🤖</span>
+                    <div className="w-full h-64 md:h-96 mb-8 bg-gradient-to-br from-indigo-50 to-indigo-100/50 flex items-center justify-center">
+                      <span className="text-6xl opacity-30">🤖</span>
                     </div>
                   )}
                   
@@ -57,7 +57,7 @@ export default function BlogPage() {
                       <span>{post.author}</span>
                     </div>
                     
-                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4 group-hover:text-gray-600 transition-colors">
+                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4 group-hover:text-indigo-600 transition-colors">
                       {post.title}
                     </h2>
                     
@@ -65,7 +65,7 @@ export default function BlogPage() {
                       {post.excerpt}
                     </p>
                     
-                    <span className="text-sm font-light tracking-wide text-gray-900 group-hover:underline">
+                    <span className="text-sm font-light tracking-wide text-indigo-600 group-hover:text-indigo-700 group-hover:underline transition-colors">
                       Read more →
                     </span>
                   </div>

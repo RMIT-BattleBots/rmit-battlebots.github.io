@@ -10,7 +10,7 @@ export default function ContactPage() {
         </h1>
 
         <div className="mb-16 border-b border-gray-100 pb-16">
-          <h2 className="text-sm font-light tracking-wider text-gray-500 uppercase mb-8">
+          <h2 className="text-sm font-light tracking-wider text-indigo-600 uppercase mb-8">
             Get in Touch
           </h2>
 
@@ -51,7 +51,7 @@ export default function ContactPage() {
                   alt="Instagram"
                   width={20}
                   height={20}
-                  className="opacity-60"
+                  className="opacity-60 hover:opacity-100"
                 />
               </a>
               <a
@@ -65,7 +65,7 @@ export default function ContactPage() {
                   alt="LinkedIn"
                   width={20}
                   height={20}
-                  className="opacity-60"
+                  className="opacity-60 hover:opacity-100"
                 />
               </a>
               <a
@@ -79,7 +79,7 @@ export default function ContactPage() {
                   alt="GitHub"
                   width={20}
                   height={20}
-                  className="opacity-60"
+                  className="opacity-60 hover:opacity-100"
                 />
               </a>
             </div>
@@ -87,7 +87,7 @@ export default function ContactPage() {
         </div>
 
         <div className="border-b border-gray-100 pb-16">
-          <h2 className="text-sm font-light tracking-wider text-gray-500 uppercase mb-8">
+          <h2 className="text-sm font-light tracking-wider text-indigo-600 uppercase mb-8">
             Join Our Community
           </h2>
 
@@ -103,7 +103,7 @@ export default function ContactPage() {
               href="https://store.rmit.edu.au/pages/club/battlebots"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block border border-gray-900 text-gray-900 px-6 py-3 text-sm font-light tracking-wide hover:bg-gray-900 hover:text-white transition-colors"
+              className="inline-block border border-indigo-600 text-indigo-600 px-6 py-3 text-sm font-light tracking-wide hover:bg-indigo-600 hover:text-white transition-colors"
             >
               Join Now
             </a>

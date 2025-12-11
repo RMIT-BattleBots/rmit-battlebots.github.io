@@ -9,7 +9,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <Link
             href="/"
-            className="flex items-center gap-3 hover:opacity-70 transition-opacity"
+            className="flex items-center gap-3 hover:opacity-70 transition-opacity group"
             aria-label="Go to home page"
           >
             <Image
@@ -17,8 +17,9 @@ export default function Navbar() {
               alt="ARC Logo"
               width={32}
               height={32}
+              className="group-hover:opacity-80 transition-opacity"
             />
-            <span className="text-lg font-light tracking-wide text-gray-900">
+            <span className="text-lg font-light tracking-wide text-gray-900 group-hover:text-indigo-600 transition-colors">
               ARC
             </span>
           </Link>
@@ -27,7 +28,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/blog"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
+                className="text-gray-600 hover:text-indigo-600 transition-colors"
               >
                 Blog
               </Link>
@@ -35,7 +36,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/about"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
+                className="text-gray-600 hover:text-indigo-600 transition-colors"
               >
                 About
               </Link>
@@ -43,7 +44,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/contact"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
+                className="text-gray-600 hover:text-indigo-600 transition-colors"
               >
                 Contact
               </Link>
@@ -53,7 +54,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
-              className="text-gray-600 hover:text-gray-900 transition-colors"
+              className="text-gray-600 hover:text-indigo-600 transition-colors"
               aria-label="Menu"
             >
               <svg
