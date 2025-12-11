@@ -3,89 +3,87 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto px-8 py-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">
-          About RMIT BattleBots
+    <main className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 lg:px-8 py-20 md:py-32">
+        <h1 className="text-5xl md:text-6xl font-light tracking-tight text-gray-900 mb-12">
+          About
         </h1>
 
-        <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+        <div className="mb-16 border-b border-gray-100 pb-16">
+          <h2 className="text-sm font-light tracking-wider text-gray-500 uppercase mb-6">
             Our Mission
           </h2>
-          <div className="mb-6">
+          <div className="mb-8">
             <Image
               src="/group_image_1.webp"
-              alt="RMIT BattleBots team working together"
+              alt="ARC team working together"
               width={800}
               height={400}
-              className="w-full h-64 object-cover rounded-lg mb-4"
+              className="w-full h-auto"
             />
           </div>
-          <p className="text-gray-600 mb-6">
-            We are the RMIT BattleBots Club, bringing together students from all
-            disciplines to design, build, and compete with our very own combat
-            bots! Our mission is to ignite the passion for combat robotics and
+          <p className="text-gray-700 leading-relaxed font-light mb-8 max-w-2xl">
+            Advanced RMIT Combat-Robotics (ARC) brings together students from all
+            disciplines to design, build, and compete with combat robots. Our mission is to ignite the passion for combat robotics and
             provide hands-on experience in engineering, design, and innovation.
           </p>
 
-          <div className="mb-6">
+          <div className="mb-8">
             <Image
               src="/group_image_2.webp"
-              alt="BattleBots team collaboration"
+              alt="ARC team collaboration"
               width={800}
               height={400}
-              className="w-full h-64 object-cover rounded-lg mb-4"
+              className="w-full h-auto"
             />
           </div>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-700 leading-relaxed font-light max-w-2xl">
             Whether you&apos;re a seasoned engineer or just curious about
             robotics, we welcome anyone with a passion for building and
-            competing. Our club provides the perfect environment to learn,
-            create, and unleash your inner innovator!
+            competing. Our collective provides the perfect environment to learn,
+            create, and explore the boundaries of robotic innovation.
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+        <div className="border-b border-gray-100 pb-16">
+          <h2 className="text-sm font-light tracking-wider text-gray-500 uppercase mb-6">
             What We Do
           </h2>
-          <ul className="text-gray-600 space-y-3">
+          <ul className="text-gray-700 space-y-4 font-light">
             <li className="flex items-start">
-              <span className="text-blue-600 mr-2">•</span>
-              Design and build combat robots for competitions
+              <span className="mr-4 text-gray-400">—</span>
+              <span>Design and build combat robots for competitions</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-600 mr-2">•</span>
+              <span className="mr-4 text-gray-400">—</span>
               <span>
                 Work with{" "}
                 <a
                   href="https://www.rmit.edu.au/about/our-values/diversity-and-inclusion/programs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 underline"
+                  className="text-gray-900 border-b border-gray-300 hover:border-gray-900 transition-colors"
                 >
                   IBelong
                 </a>
-                {"  "}
-                to deliver engineering workshops to highschools
+                {" "}to deliver engineering workshops to highschools
               </span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-600 mr-2">•</span>
-              Run workshops on robotics, electronics, and mechanical design
+              <span className="mr-4 text-gray-400">—</span>
+              <span>Run workshops on robotics, electronics, and mechanical design</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-600 mr-2">•</span>
-              Network with industry professionals and mentors
+              <span className="mr-4 text-gray-400">—</span>
+              <span>Network with industry professionals and mentors</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-600 mr-2">•</span>
-              Socialise with other engineering students
+              <span className="mr-4 text-gray-400">—</span>
+              <span>Connect with other engineering students</span>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

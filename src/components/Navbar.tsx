@@ -12,20 +12,20 @@ export default function Navbar() {
             className="flex items-center gap-3 hover:opacity-70 transition-opacity"
             aria-label="Go to home page"
           >
-            <Image 
-              src="/robot_logo.svg" 
-              alt="ARC Logo" 
-              width={32} 
+            <Image
+              src="/robot_logo.svg"
+              alt="ARC Logo"
+              width={32}
               height={32}
             />
             <span className="text-lg font-light tracking-wide text-gray-900">
               ARC
             </span>
           </Link>
-          
+
           <ul className="hidden md:flex items-center gap-8 text-sm font-light tracking-wide">
             <li>
-              <Link 
+              <Link
                 href="/blog"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
               >
@@ -33,22 +33,20 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link 
-                href="/#about"
+              <Link
+                href="/about"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
               >
                 About
               </Link>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/company/rmit-battlebots"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
 
