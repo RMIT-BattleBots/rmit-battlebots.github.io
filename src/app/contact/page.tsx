@@ -3,40 +3,40 @@ import Image from "next/image";
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-stone-50">
+    <main className="min-h-screen bg-stone-300">
       <div className="max-w-4xl mx-auto px-6 lg:px-8 py-20 md:py-32">
         <h1 className="text-5xl md:text-6xl font-light tracking-tight text-stone-900 mb-12">
           Contact
         </h1>
 
-        <div className="mb-16 border-b border-stone-200 pb-16">
-          <h2 className="text-sm font-light tracking-wider text-stone-500 uppercase mb-8">
+        <div className="mb-16 border-b border-stone-400/30 pb-16">
+          <h2 className="text-sm font-light tracking-wider text-stone-700 uppercase mb-8">
             Get in Touch
           </h2>
 
           <div className="space-y-8 mb-12">
             <div>
-              <h3 className="text-sm font-light tracking-wide text-stone-500 uppercase mb-2">
+              <h3 className="text-sm font-light tracking-wide text-stone-700 uppercase mb-2">
                 Location
               </h3>
-              <p className="text-stone-700 font-light">RMIT City Campus</p>
-              <p className="text-stone-700 font-light">
+              <p className="text-stone-800 font-light">RMIT City Campus</p>
+              <p className="text-stone-800 font-light">
                 Melbourne, Victoria, Australia
               </p>
             </div>
 
             <div>
-              <h3 className="text-sm font-light tracking-wide text-stone-500 uppercase mb-2">
+              <h3 className="text-sm font-light tracking-wide text-stone-700 uppercase mb-2">
                 Meeting Times
               </h3>
-              <p className="text-stone-700 font-light">
+              <p className="text-stone-800 font-light">
                 Weekly workshops and build sessions
               </p>
             </div>
           </div>
 
           <div>
-            <h3 className="text-sm font-light tracking-wide text-stone-500 uppercase mb-6">
+            <h3 className="text-sm font-light tracking-wide text-stone-700 uppercase mb-6">
               Follow Us
             </h3>
             <div className="flex gap-6">
@@ -44,50 +44,50 @@ export default function ContactPage() {
                 href="https://www.instagram.com/rmitarc/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-60 transition-opacity"
+                className="hover:opacity-70 transition-opacity"
               >
                 <Image
                   src="/instagram.svg"
                   alt="Instagram"
                   width={20}
                   height={20}
-                  className="opacity-60"
+                  className="opacity-70"
                 />
               </a>
               <a
                 href="https://www.linkedin.com/company/advanced-rmit-combat-robotics"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-60 transition-opacity"
+                className="hover:opacity-70 transition-opacity"
               >
                 <Image
                   src="/linkedin.svg"
                   alt="LinkedIn"
                   width={20}
                   height={20}
-                  className="opacity-60"
+                  className="opacity-70"
                 />
               </a>
               <a
                 href="https://github.com/RMIT-BattleBots"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:opacity-60 transition-opacity"
+                className="hover:opacity-70 transition-opacity"
               >
                 <Image
                   src="/github-mark.svg"
                   alt="GitHub"
                   width={20}
                   height={20}
-                  className="opacity-60"
+                  className="opacity-70"
                 />
               </a>
             </div>
           </div>
         </div>
 
-        <div className="border-b border-stone-200 pb-16">
-          <h2 className="text-sm font-light tracking-wider text-stone-500 uppercase mb-8">
+        <div className="border-b border-stone-400/30 pb-16">
+          <h2 className="text-sm font-light tracking-wider text-stone-700 uppercase mb-8">
             Join Our Community
           </h2>
 
@@ -95,7 +95,7 @@ export default function ContactPage() {
             <h3 className="text-lg font-light text-stone-900 mb-4">
               Membership
             </h3>
-            <p className="text-stone-700 font-light mb-6 max-w-xl">
+            <p className="text-stone-800 font-light mb-6 max-w-xl">
               Ready to join? Become a member and get access to our workshops,
               competitions, and resources.
             </p>
@@ -103,7 +103,7 @@ export default function ContactPage() {
               href="https://store.rmit.edu.au/pages/club/battlebots"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block border border-stone-900 text-stone-900 px-6 py-3 text-sm font-light tracking-wide hover:bg-stone-900 hover:text-stone-50 transition-colors"
+              className="inline-block border border-stone-900 text-stone-900 px-6 py-3 text-sm font-light tracking-wide hover:bg-stone-900 hover:text-stone-50 transition-colors bg-stone-50/50"
             >
               Join Now
             </a>

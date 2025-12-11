@@ -2,14 +2,14 @@ import Image from "next/image";
 import React from "react";
 
 const Footer = () => (
-  <footer className="w-full bg-stone-50 border-t border-stone-200 mt-auto">
+  <footer className="w-full bg-stone-300 border-t border-stone-400/30 mt-auto">
     <div className="max-w-6xl mx-auto px-6 lg:px-8 py-12">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         <div>
-          <p className="text-sm font-light text-stone-500 mb-2">
+          <p className="text-sm font-light text-stone-700 mb-2">
             Advanced RMIT Combat-Robotics
           </p>
-          <p className="text-xs font-light text-stone-400">
+          <p className="text-xs font-light text-stone-600">
             © {new Date().getFullYear()} ARC. All rights reserved.
           </p>
         </div>
@@ -20,14 +20,14 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="hover:opacity-60 transition-opacity"
+            className="hover:opacity-70 transition-opacity"
           >
             <Image
               src="/linkedin.svg"
               alt="LinkedIn"
               width={20}
               height={20}
-              className="opacity-60"
+              className="opacity-70"
             />
           </a>
           <a
@@ -35,14 +35,14 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="hover:opacity-60 transition-opacity"
+            className="hover:opacity-70 transition-opacity"
           >
             <Image
               src="/instagram.svg"
               alt="Instagram"
               width={20}
               height={20}
-              className="opacity-60"
+              className="opacity-70"
             />
           </a>
           <a
@@ -50,14 +50,14 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="hover:opacity-60 transition-opacity"
+            className="hover:opacity-70 transition-opacity"
           >
             <Image
               src="/github-mark.svg"
               alt="GitHub"
               width={20}
               height={20}
-              className="opacity-60"
+              className="opacity-70"
             />
           </a>
         </div>

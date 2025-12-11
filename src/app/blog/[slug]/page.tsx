@@ -36,12 +36,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const htmlContent = await markdownToHtml(post.content);
 
   return (
-    <main className="min-h-screen bg-stone-50">
+    <main className="min-h-screen bg-stone-300">
       {/* Back Button */}
       <div className="max-w-4xl mx-auto px-6 lg:px-8 pt-12">
         <Link
           href="/blog"
-          className="inline-flex items-center text-stone-600 hover:text-stone-900 text-sm font-light tracking-wide mb-12 transition-colors"
+          className="inline-flex items-center text-stone-800 hover:text-stone-900 text-sm font-light tracking-wide mb-12 transition-colors"
         >
           ← Back to Blog
         </Link>
@@ -49,12 +49,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
       <article className="max-w-4xl mx-auto px-6 lg:px-8 pb-24">
         {/* Header */}
-        <header className="mb-12 border-b border-stone-200 pb-12">
+        <header className="mb-12 border-b border-stone-400/30 pb-12">
           <h1 className="text-4xl md:text-5xl font-light tracking-tight text-stone-900 mb-6 leading-tight">
             {post.title}
           </h1>
           
-          <div className="flex items-center gap-3 text-xs font-light tracking-wide text-stone-500">
+          <div className="flex items-center gap-3 text-xs font-light tracking-wide text-stone-700">
             <time>{new Date(post.date).toLocaleDateString('en-US', { 
               year: 'numeric', 
               month: 'long', 
@@ -65,7 +65,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
 
           {post.featuredImage && (
-            <div className="relative w-full h-64 md:h-96 mt-12 overflow-hidden bg-stone-100">
+            <div className="relative w-full h-64 md:h-96 mt-12 overflow-hidden bg-stone-200">
               <Image
                 src={post.featuredImage}
                 alt={post.title}
@@ -83,16 +83,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           className="prose prose-lg max-w-none
             prose-headings:text-stone-900 prose-headings:font-light prose-headings:tracking-tight
             prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl
-            prose-p:text-stone-700 prose-p:leading-relaxed prose-p:font-light
-            prose-a:text-stone-900 prose-a:no-underline hover:prose-a:underline prose-a:border-b prose-a:border-stone-300 hover:prose-a:border-stone-900
+            prose-p:text-stone-800 prose-p:leading-relaxed prose-p:font-light
+            prose-a:text-stone-900 prose-a:no-underline hover:prose-a:underline prose-a:border-b prose-a:border-stone-600 hover:prose-a:border-stone-900
             prose-strong:text-stone-900 prose-strong:font-normal
-            prose-code:text-stone-900 prose-code:bg-stone-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-light
-            prose-pre:bg-stone-900 prose-pre:text-stone-100 prose-pre:rounded-none prose-pre:border prose-pre:border-stone-200
+            prose-code:text-stone-900 prose-code:bg-stone-200 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-light
+            prose-pre:bg-stone-900 prose-pre:text-stone-100 prose-pre:rounded-none prose-pre:border prose-pre:border-stone-400
             prose-img:my-12 prose-img:w-full prose-img:h-auto
-            prose-blockquote:border-l prose-blockquote:border-stone-300 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-stone-600 prose-blockquote:font-light prose-blockquote:my-8
-            prose-ul:list-none prose-ol:list-none prose-li:text-stone-700 prose-li:font-light prose-li:mb-2
+            prose-blockquote:border-l prose-blockquote:border-stone-500 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-stone-700 prose-blockquote:font-light prose-blockquote:my-8
+            prose-ul:list-none prose-ol:list-none prose-li:text-stone-800 prose-li:font-light prose-li:mb-2
             prose-ul:space-y-2 prose-ol:space-y-2
-            prose-hr:border-stone-200 prose-hr:my-12"
+            prose-hr:border-stone-400/30 prose-hr:my-12"
           dangerouslySetInnerHTML={{ __html: htmlContent }}
         />
       </article>

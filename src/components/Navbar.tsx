@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="w-full bg-stone-50/80 backdrop-blur-sm sticky top-0 z-50 border-b border-stone-200">
+    <nav className="w-full bg-stone-300/80 backdrop-blur-sm sticky top-0 z-50 border-b border-stone-400/30">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link
@@ -17,7 +17,7 @@ export default function Navbar() {
               alt="ARC Logo"
               width={32}
               height={32}
-              className="opacity-60"
+              className="opacity-70"
             />
             <span className="text-lg font-light tracking-wide text-stone-900">
               ARC
@@ -28,7 +28,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/blog"
-                className="text-stone-600 hover:text-stone-900 transition-colors"
+                className="text-stone-800 hover:text-stone-900 transition-colors"
               >
                 Blog
               </Link>
@@ -36,7 +36,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/about"
-                className="text-stone-600 hover:text-stone-900 transition-colors"
+                className="text-stone-800 hover:text-stone-900 transition-colors"
               >
                 About
               </Link>
@@ -44,7 +44,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/contact"
-                className="text-stone-600 hover:text-stone-900 transition-colors"
+                className="text-stone-800 hover:text-stone-900 transition-colors"
               >
                 Contact
               </Link>
@@ -54,7 +54,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
-              className="text-stone-600 hover:text-stone-900 transition-colors"
+              className="text-stone-800 hover:text-stone-900 transition-colors"
               aria-label="Menu"
             >
               <svg

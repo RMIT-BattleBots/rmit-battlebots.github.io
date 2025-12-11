@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-stone-50">
+    <main className="min-h-screen bg-stone-300">
       {/* Hero Section */}
-      <section className="border-b border-stone-200">
+      <section className="border-b border-stone-400/30">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 py-32 md:py-40">
           <div className="mb-12">
             <Image
@@ -13,7 +13,7 @@ export default function Home() {
               alt="ARC Logo"
               width={64}
               height={64}
-              className="mb-8 opacity-60"
+              className="mb-8 opacity-70"
             />
           </div>
           <h1 className="text-5xl md:text-7xl font-light tracking-tight text-stone-900 mb-6 leading-tight">
@@ -21,20 +21,20 @@ export default function Home() {
             <br />
             Combat-Robotics
           </h1>
-          <p className="text-xl md:text-2xl font-light text-stone-600 mb-12 leading-relaxed max-w-2xl">
+          <p className="text-xl md:text-2xl font-light text-stone-800 mb-12 leading-relaxed max-w-2xl">
             A student-led engineering collective building combat robots and
             exploring the boundaries of robotics innovation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/blog"
-              className="inline-block border border-stone-900 text-stone-900 px-8 py-3 text-sm font-light tracking-wide hover:bg-stone-900 hover:text-stone-50 transition-colors"
+              className="inline-block border border-stone-900 text-stone-900 px-8 py-3 text-sm font-light tracking-wide hover:bg-stone-900 hover:text-stone-50 transition-colors bg-stone-50/50"
             >
               View Work
             </Link>
             <Link
               href="#about"
-              className="inline-block text-stone-600 px-8 py-3 text-sm font-light tracking-wide hover:text-stone-900 transition-colors"
+              className="inline-block text-stone-800 px-8 py-3 text-sm font-light tracking-wide hover:text-stone-900 transition-colors"
             >
               Learn More →
             </Link>
@@ -43,34 +43,34 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="border-b border-stone-200">
+      <section id="about" className="border-b border-stone-400/30">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 py-24 md:py-32">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
             <div>
-              <h2 className="text-sm font-light tracking-wider text-stone-500 uppercase mb-4">
+              <h2 className="text-sm font-light tracking-wider text-stone-700 uppercase mb-4">
                 What We Do
               </h2>
-              <p className="text-stone-700 leading-relaxed font-light">
+              <p className="text-stone-800 leading-relaxed font-light">
                 Design, build, and compete with combat robots. We bring together
                 students from various engineering disciplines to create
                 innovative robotic systems.
               </p>
             </div>
             <div>
-              <h2 className="text-sm font-light tracking-wider text-stone-500 uppercase mb-4">
+              <h2 className="text-sm font-light tracking-wider text-stone-700 uppercase mb-4">
                 Our Approach
               </h2>
-              <p className="text-stone-700 leading-relaxed font-light">
+              <p className="text-stone-800 leading-relaxed font-light">
                 Hands-on learning through real projects. We believe the best way
                 to learn engineering is by building machines that can withstand
                 combat.
               </p>
             </div>
             <div>
-              <h2 className="text-sm font-light tracking-wider text-stone-500 uppercase mb-4">
+              <h2 className="text-sm font-light tracking-wider text-stone-700 uppercase mb-4">
                 Community
               </h2>
-              <p className="text-stone-700 leading-relaxed font-light">
+              <p className="text-stone-800 leading-relaxed font-light">
                 A collaborative space for passionate engineers to share
                 knowledge, work on projects, and push the boundaries of
                 what&apos;s possible.
@@ -78,11 +78,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="pt-16 border-t border-stone-200">
+          <div className="pt-16 border-t border-stone-400/30">
             <h2 className="text-3xl font-light text-stone-900 mb-6">
               About ARC
             </h2>
-            <div className="space-y-6 text-stone-700 leading-relaxed font-light max-w-2xl">
+            <div className="space-y-6 text-stone-800 leading-relaxed font-light max-w-2xl">
               <p>
                 Advanced RMIT Combat-Robotics (ARC) is a student-run engineering
                 collective dedicated to building combat robots and inspiring
@@ -110,10 +110,10 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="border-b border-stone-200">
+      <section className="border-b border-stone-400/30">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 py-24 md:py-32">
           <h2 className="text-3xl font-light text-stone-900 mb-8">Connect</h2>
-          <p className="text-stone-600 mb-12 font-light leading-relaxed max-w-xl">
+          <p className="text-stone-800 mb-12 font-light leading-relaxed max-w-xl">
             Follow our journey, see our builds, and stay updated with
             competition highlights and engineering insights.
           </p>
@@ -122,7 +122,7 @@ export default function Home() {
               href="https://www.instagram.com/rmitarc/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-stone-600 hover:text-stone-900 text-sm font-light tracking-wide transition-colors"
+              className="text-stone-700 hover:text-stone-900 text-sm font-light tracking-wide transition-colors"
             >
               Instagram
             </a>
@@ -130,7 +130,7 @@ export default function Home() {
               href="https://www.linkedin.com/company/advanced-rmit-combat-roboticsrmit-battlebots"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-stone-600 hover:text-stone-900 text-sm font-light tracking-wide transition-colors"
+              className="text-stone-700 hover:text-stone-900 text-sm font-light tracking-wide transition-colors"
             >
               LinkedIn
             </a>
@@ -138,7 +138,7 @@ export default function Home() {
               href="https://github.com/RMIT-BattleBots"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-stone-600 hover:text-stone-900 text-sm font-light tracking-wide transition-colors"
+              className="text-stone-700 hover:text-stone-900 text-sm font-light tracking-wide transition-colors"
             >
               GitHub
             </a>
