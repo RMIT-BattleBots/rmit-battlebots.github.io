@@ -337,14 +337,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="border-b border-[#C40F0F]/20 relative z-10">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 py-32 md:py-40">
-          <div className="mb-12 animate-fade-in-up">
-            <div className="inline-block animate-float-slow">
+          <div className="mb-1 animate-fade-in-up">
+            <div className="inline-block">
               <Image
                 src="/robot_logo.png"
                 alt="ARC Logo"
-                width={280}
-                height={280}
-                className="mb-8 opacity-80"
+                width={600}
+                height={600}
+                className="mb-2"
               />
             </div>
           </div>

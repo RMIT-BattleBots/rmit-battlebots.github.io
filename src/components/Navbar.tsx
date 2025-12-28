@@ -16,8 +16,8 @@ export default function Navbar() {
               <Image
                 src="/ARC_logo_only.png"
                 alt="ARC Logo"
-                width={48}
-                height={48}
+                width={78}
+                height={78}
                 className="opacity-80"
               />
             </div>
