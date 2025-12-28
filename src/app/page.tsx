@@ -337,22 +337,18 @@ export default function Home() {
       {/* Hero Section */}
       <section className="border-b border-[#C40F0F]/20 relative z-10">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 py-32 md:py-40">
-          <div className="mb-12 animate-fade-in-up">
-            <div className="inline-block animate-float-slow">
+          <div className="mb-1 animate-fade-in-up">
+            <div className="inline-block">
               <Image
-                src="/robot_logo.svg"
+                src="/robot_logo.png"
                 alt="ARC Logo"
-                width={72}
-                height={72}
-                className="mb-8 opacity-80"
+                width={600}
+                height={600}
+                className="mb-2"
               />
             </div>
           </div>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-light tracking-tight text-stone-900 mb-8 leading-[1.1] animate-fade-in-up delay-100">
-            Advanced RMIT
-            <br />
-            <span className="text-[#C40F0F]">Combat-Robotics</span>
-          </h1>
+
           <p className="text-lg md:text-xl lg:text-2xl font-light text-stone-700 mb-12 leading-relaxed max-w-3xl animate-fade-in-up delay-200">
             A student-led engineering collective building combat robots and
             exploring the boundaries of robotics innovation.
