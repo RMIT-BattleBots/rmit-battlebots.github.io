@@ -340,19 +340,15 @@ export default function Home() {
           <div className="mb-12 animate-fade-in-up">
             <div className="inline-block animate-float-slow">
               <Image
-                src="/robot_logo.svg"
+                src="/robot_logo.png"
                 alt="ARC Logo"
-                width={72}
-                height={72}
+                width={280}
+                height={280}
                 className="mb-8 opacity-80"
               />
             </div>
           </div>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-light tracking-tight text-stone-900 mb-8 leading-[1.1] animate-fade-in-up delay-100">
-            Advanced RMIT
-            <br />
-            <span className="text-[#C40F0F]">Combat-Robotics</span>
-          </h1>
+
           <p className="text-lg md:text-xl lg:text-2xl font-light text-stone-700 mb-12 leading-relaxed max-w-3xl animate-fade-in-up delay-200">
             A student-led engineering collective building combat robots and
             exploring the boundaries of robotics innovation.

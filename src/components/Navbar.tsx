@@ -14,10 +14,10 @@ export default function Navbar() {
           >
             <div className="group-hover:rotate-12 transition-transform duration-300">
               <Image
-                src="/robot_logo.svg"
+                src="/ARC_logo_only.png"
                 alt="ARC Logo"
-                width={32}
-                height={32}
+                width={48}
+                height={48}
                 className="opacity-80"
               />
             </div>
