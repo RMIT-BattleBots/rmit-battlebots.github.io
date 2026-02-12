@@ -27,7 +27,7 @@ more you will get out of it.
 
 ![The old clubspace with people working in it](/blog-images/club-at-work-photo.jpg)
 
-## What recorces are available at ARC?  
+## What resources are available at ARC?  
 
 We of cource have access to a number of CADs (Computor-aided Design tools) thanks to RMIT. We also have access to the *Maker Space*, though with the   
 acquisition of a new *semi* club space we are looking to aquire some 3d printers for our own. This will allow us to use own own filliments and have   
