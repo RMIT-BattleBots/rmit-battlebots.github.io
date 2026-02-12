@@ -22,7 +22,7 @@ is truly one of the best things in this world.
 
 ARC is a very welcoming environment for anyone from any background, experience level, or identity. We hope to a fun and safe learning environment so   
 you can meet and make friends with like-minded individuals - and make cool robots along the way. ARC is a much more laid back club in comparison to   
-others here at RMIT so there is no pressure to carve out en enormous amount of time for the club. But of cource the more time you put into it the   
+others here at RMIT so there is no pressure to carve out an enormous amount of time for the club. But of course the more time you put into it the   
 more you will get out of it.  
 
 ![The old clubspace with people working in it](/blog-images/club-at-work-photo.jpg)
