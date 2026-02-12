@@ -1,9 +1,10 @@
-
-Title: "ARC, what are we?"
-Date: "2026-01-30"
-Author: "Romi Luna Cardoso"
-Excerpt: "ARC's goal is  to design and create combat robots with the goal to compete with them in a variety of competitions and represent the school."
-
+---
+title: "ARC, what are we?"
+date: "2026-01-30"
+author: "Romi Luna Cardoso"
+excerpt: "ARC's goal is  to design and create combat robots with the goal to compete with them in a variety of competitions and represent the school."
+featuredImage: "/blog-images/team-work.jpg"
+---
 # ARC, what are we?  
 
 ARC's (Advanced RMIT Combat-Robotics) goal is to design and create combat robots with the goal to compete at a variety of competitions and  
