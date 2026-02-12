@@ -30,7 +30,7 @@ more you will get out of it.
 ## What resources are available at ARC?  
 
 We of cource have access to a number of CADs (Computer-aided Design tools) thanks to RMIT. We also have access to the *Maker Space*, though with the   
-acquisition of a new *semi* club space we are looking to aquire some 3d printers for our own. This will allow us to use own own filliments and have   
+acquisition of a new *semi* club space we are looking to acquire some 3d printers for our own. This will allow us to use our own filaments and have   
 quicer access for all printing jobs. Aditonaly we have acces to a small wood workshop in the old club space and we have some contacts in the Bundoora   
 RMIT campus for more advanced (sort of) manufacturing.   
 
