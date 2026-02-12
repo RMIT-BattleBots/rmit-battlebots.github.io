@@ -31,7 +31,7 @@ more you will get out of it.
 
 We of cource have access to a number of CADs (Computer-aided Design tools) thanks to RMIT. We also have access to the *Maker Space*, though with the   
 acquisition of a new *semi* club space we are looking to acquire some 3d printers for our own. This will allow us to use our own filaments and have   
-quicer access for all printing jobs. Aditonaly we have acces to a small wood workshop in the old club space and we have some contacts in the Bundoora   
+quicker access for all printing jobs. Additionally we have access to a small wood workshop in the old club space and we have some contacts in the Bundoora   
 RMIT campus for more advanced (sort of) manufacturing.   
 
 ---
