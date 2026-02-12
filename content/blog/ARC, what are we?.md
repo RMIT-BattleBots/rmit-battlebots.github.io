@@ -14,7 +14,7 @@ represent the school.
 ARC to me is all about the engineering processes and learning from it. It is immensely satisfying to watch a project from start as just an idea on   
 a whiteboard and to see it evolve through many iterations ending up as a thing you can hold in your hands and watch compete. And even then as you   
 are watching it do the thing you designed it to do, your still thinking about all the improvements you could make and the way you can do them. It   
-is truely one of the best things in this world.  
+is truly one of the best things in this world.  
 
 ![action shot of dave](/blog-images/robo-action-shot.png)
 
