@@ -1,8 +1,8 @@
 
-Title: ARC, what are we?  
-Date: 2026-01-30  
-Author: Romi Luna Cardoso  
-Excerpt: ARC's goal is  to design and create combat robots with the goal to compete with them in a variety of competitions and represent the school.  
+Title: "ARC, what are we?"
+Date: "2026-01-30"
+Author: "Romi Luna Cardoso"
+Excerpt: "ARC's goal is  to design and create combat robots with the goal to compete with them in a variety of competitions and represent the school."
 
 # ARC, what are we?  
 
