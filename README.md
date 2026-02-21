@@ -1,6 +1,6 @@
-# 🤖 Advanced RMIT Combat-Robotics (ARC) Website
+# 🤖 Advanced RMIT Competitive Robotics (ARCR) Website
 
-Welcome to the official website for **Advanced RMIT Combat-Robotics (ARC)** - a student-run engineering collective building combat robots and inspiring hands-on innovation through tech, teamwork, and engineering excellence.
+Welcome to the official website for **Advanced RMIT Competitive Robotics (ARCR)** - a student-run engineering collective building combat robots and inspiring hands-on innovation through tech, teamwork, and engineering excellence.
 
 This site is used to share our events, showcase our bots, and connect with the community.
 

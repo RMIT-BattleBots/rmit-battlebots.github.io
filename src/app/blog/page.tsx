@@ -20,7 +20,7 @@ export default function BlogPage() {
             Blog
           </h1>
           <p className="text-lg md:text-xl text-stone-700 font-light leading-relaxed max-w-3xl">
-            Build logs, competition highlights, and engineering insights from ARC.
+            Build logs, competition highlights, and engineering insights from ARCR.
           </p>
         </div>
 

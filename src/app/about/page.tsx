@@ -23,14 +23,14 @@ export default function AboutPage() {
           <div className="mb-10 overflow-hidden group rounded-sm shadow-md">
             <Image
               src="/group_image_1.webp"
-              alt="ARC team working together"
+              alt="ARCR team working together"
               width={800}
               height={400}
               className="w-full h-auto group-hover:scale-105 transition-transform duration-700"
             />
           </div>
           <p className="text-lg text-stone-700 leading-relaxed font-light mb-10 max-w-3xl">
-            Advanced RMIT Combat-Robotics (ARC) brings together students from
+            Advanced RMIT Competitive Robotics (ARCR) brings together students from
             all disciplines to design, build, and compete with combat robots.
             Our mission is to ignite the passion for combat robotics and provide
             hands-on experience in engineering, design, and innovation.
@@ -39,7 +39,7 @@ export default function AboutPage() {
           <div className="mb-10 overflow-hidden group rounded-sm shadow-md">
             <Image
               src="/group_image_2.webp"
-              alt="ARC team collaboration"
+              alt="ARCR team collaboration"
               width={800}
               height={400}
               className="w-full h-auto group-hover:scale-105 transition-transform duration-700"

@@ -15,14 +15,14 @@ export default function Navbar() {
             <div className="group-hover:rotate-12 transition-transform duration-300">
               <Image
                 src="/ARC_logo_only.png"
-                alt="ARC Logo"
+                alt="ARCR Logo"
                 width={78}
                 height={78}
                 className="opacity-80"
               />
             </div>
             <span className="text-lg font-light tracking-wide text-stone-900 group-hover:translate-x-1 transition-transform duration-300">
-              ARC
+              ARCR
             </span>
           </Link>
 

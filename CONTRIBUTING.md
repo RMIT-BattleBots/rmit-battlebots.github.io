@@ -60,7 +60,7 @@ Please create commit messages that are detailed to maintain good revision contro
 
 ## How to Write a Blog Post
 
-Blog posts are a great way to share updates, build logs, tutorials, and stories from the ARC community. Here's how to create one:
+Blog posts are a great way to share updates, build logs, tutorials, and stories from the ARCR community. Here's how to create one:
 
 ### Step 1: Create Your Blog Post File
 

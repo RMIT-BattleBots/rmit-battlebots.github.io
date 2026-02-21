@@ -50,7 +50,7 @@ export default function ContactPage() {
             </h3>
             <div className="flex gap-8">
               <a
-                href="https://www.instagram.com/rmitarc/"
+                href="https://www.instagram.com/rmitarcr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-70 transition-all duration-300 hover:scale-110 hover:rotate-12"
@@ -64,7 +64,7 @@ export default function ContactPage() {
                 />
               </a>
               <a
-                href="https://www.linkedin.com/company/advanced-rmit-combat-robotics"
+                href="https://www.linkedin.com/company/advanced-rmit-competitive-robotics"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-70 transition-all duration-300 hover:scale-110 hover:rotate-12"

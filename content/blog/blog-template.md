@@ -46,7 +46,7 @@ If you need to include code snippets:
 ```javascript
 // Example code block
 function example() {
-  console.log("Hello, ARC!");
+  console.log("Hello, ARCR!");
 }
 ```
 
@@ -54,8 +54,8 @@ function example() {
 
 You can link to external resources or other pages:
 
-- [ARC GitHub Repository](https://github.com/RMIT-BattleBots)
-- [ARC Instagram](https://www.instagram.com/rmitarc/)
+- [ARCR GitHub Repository](https://github.com/RMIT-BattleBots)
+- [ARCR Instagram](https://www.instagram.com/rmitarcr/)
 
 ### Blockquotes
 
