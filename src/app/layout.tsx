@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ARC - Advanced RMIT Combat-Robotics",
+  title: "ARCR - Advanced RMIT Competitive Robotics",
   description: "A student-led engineering collective building combat robots and exploring the boundaries of robotics innovation.",
   icons: {
     icon: "/ARC_logo_only.png",

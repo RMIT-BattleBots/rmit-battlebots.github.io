@@ -341,7 +341,7 @@ export default function Home() {
             <div className="inline-block">
               <Image
                 src="/robot_logo.png"
-                alt="ARC Logo"
+                alt="ARCR Logo"
                 width={600}
                 height={600}
                 className="mb-2"
@@ -414,13 +414,13 @@ export default function Home() {
 
           <div className="pt-20 border-t border-stone-300/50 animate-fade-in-up delay-400">
             <h2 className="text-4xl md:text-5xl font-light text-stone-900 mb-8 leading-tight">
-              About ARC
+              About ARCR
             </h2>
             <div className="space-y-6 text-stone-700 leading-relaxed font-light max-w-3xl text-lg">
               <p>
-                Advanced RMIT Combat-Robotics (ARC) is a student-run engineering
-                collective dedicated to building combat robots and inspiring
-                hands-on innovation through technology, teamwork, and
+                Advanced RMIT Competitive Robotics (ARCR) is a student-run
+                engineering collective dedicated to building combat robots and
+                inspiring hands-on innovation through technology, teamwork, and
                 engineering excellence.
               </p>
               <p>
@@ -453,7 +453,7 @@ export default function Home() {
               </h2>
               <p className="text-lg text-stone-700 leading-relaxed font-light mb-8">
                 From workshops and build sessions to competitions and panel
-                discussions, ARC hosts a variety of events that bring our
+                discussions, ARCR hosts a variety of events that bring our
                 community together. Join us for hands-on learning, networking
                 opportunities, and exciting robot combat action.
               </p>
@@ -498,7 +498,7 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-sm shadow-lg group">
                 <Image
                   src="/group_image_3.jpg"
-                  alt="ARC event panel discussion"
+                  alt="ARCR event panel discussion"
                   width={600}
                   height={400}
                   className="w-full h-auto group-hover:scale-105 transition-transform duration-700"
@@ -534,7 +534,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap gap-8 animate-fade-in-up delay-200">
             <a
-              href="https://www.instagram.com/rmitarc/"
+              href="https://www.instagram.com/rmitarcr/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#C40F0F] hover:text-[#a00d0d] text-base font-light tracking-wide transition-all duration-300 hover:scale-110 inline-block border-b-2 border-[#C40F0F]/30 hover:border-[#C40F0F] pb-1"
@@ -542,7 +542,7 @@ export default function Home() {
               Instagram
             </a>
             <a
-              href="https://www.linkedin.com/company/advanced-rmit-combat-roboticsrmit-battlebots"
+              href="https://www.linkedin.com/company/advanced-rmit-competitive-robotics"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#C40F0F] hover:text-[#a00d0d] text-base font-light tracking-wide transition-all duration-300 hover:scale-110 inline-block border-b-2 border-[#C40F0F]/30 hover:border-[#C40F0F] pb-1"

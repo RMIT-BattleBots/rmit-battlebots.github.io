@@ -7,16 +7,16 @@ const Footer = () => (
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         <div>
           <p className="text-sm font-light text-stone-700 mb-2">
-            Advanced RMIT Combat-Robotics
+            Advanced RMIT Competitive Robotics
           </p>
           <p className="text-xs font-light text-stone-600">
-            © {new Date().getFullYear()} ARC. All rights reserved.
+            © {new Date().getFullYear()} ARCR. All rights reserved.
           </p>
         </div>
 
         <div className="flex gap-6">
           <a
-            href="https://www.linkedin.com/company/advanced-rmit-combat-robotics"
+            href="https://www.linkedin.com/company/advanced-rmit-competitive-robotics"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -31,7 +31,7 @@ const Footer = () => (
             />
           </a>
           <a
-            href="https://www.instagram.com/rmitarc/"
+            href="https://www.instagram.com/rmitarcr/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"

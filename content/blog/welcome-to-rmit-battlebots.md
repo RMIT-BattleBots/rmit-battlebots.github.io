@@ -1,18 +1,18 @@
 ---
-title: "Welcome to ARC!"
+title: "Welcome to ARCR!"
 date: "2024-01-15"
-author: "ARC Team"
+author: "ARCR Team"
 excerpt: "Join us as we kick off an exciting new season of robot combat, innovation, and engineering excellence."
 featuredImage: "/blog-images/battlebot-action.jpg"
 ---
 
-# Welcome to ARC!
+# Welcome to ARCR!
 
-We're thrilled to welcome you to the official website of **Advanced RMIT Combat-Robotics (ARC)** - a student-run engineering collective dedicated to building combat robots and inspiring hands-on innovation through technology, teamwork, and engineering excellence.
+We're thrilled to welcome you to the official website of **Advanced RMIT Competitive Robotics (ARCR)** - a student-run engineering collective dedicated to building combat robots and inspiring hands-on innovation through technology, teamwork, and engineering excellence.
 
 ## What We Do
 
-At ARC, we bring together passionate students from various engineering disciplines to design, build, and compete with combat robots. Our collective provides a unique opportunity to:
+At ARCR, we bring together passionate students from various engineering disciplines to design, build, and compete with combat robots. Our collective provides a unique opportunity to:
 
 - **Learn by doing**: Get hands-on experience with mechanical design, electronics, programming, and fabrication
 - **Build amazing robots**: Create powerful combat machines from concept to competition
@@ -27,7 +27,7 @@ Our mission is to inspire innovation, foster collaboration, and provide a platfo
 
 ## Getting Involved
 
-Whether you're a seasoned engineer or just starting out, there's a place for you in ARC. We welcome students from all backgrounds and skill levels. Here's how you can get involved:
+Whether you're a seasoned engineer or just starting out, there's a place for you in ARCR. We welcome students from all backgrounds and skill levels. Here's how you can get involved:
 
 1. **Join our meetings**: Come to our weekly club meetings to learn more
 2. **Join a team**: Work with other members on building a combat robot
@@ -50,8 +50,8 @@ This season promises to be our most exciting yet! We have several competitions l
 
 Follow us on social media to stay updated with the latest news and events:
 
-- **Instagram**: [@rmitarc](https://www.instagram.com/rmitarc/)
-- **LinkedIn**: [Advanced RMIT Combat-Robotics](https://www.linkedin.com/company/advanced-rmit-combat-robotics)
+- **Instagram**: [@rmitarcr](https://www.instagram.com/rmitarcr/)
+- **LinkedIn**: [Advanced RMIT Competitive Robotics](https://www.linkedin.com/company/advanced-rmit-competitive-robotics)
 - **GitHub**: [RMIT-BattleBots](https://github.com/RMIT-BattleBots)
 
 We're excited to have you join us on this journey. Let's build something amazing together!
